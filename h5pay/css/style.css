@@ -1,0 +1,146 @@
+*{padding:0;margin:0;}
+body{background-color:#eee; }
+ul{list-style: none;}
+.hide{
+	display: none;
+}
+.top{
+	width: 100%;
+	height: 1.8em;
+	line-height: 1.8em;
+	font-size: 20px;
+	background-color: #36aaf5;
+	color:#fff;
+}
+.top span{
+	float: left;
+	display:block;
+	width: 1.8em;
+	height: 1.8em;
+	line-height: 1.8em;
+	margin-left: .3em;
+}
+.top span img{
+	width: 100%;
+	display: block;
+	
+}
+.top h3{
+	width: 100%;
+	text-align: center;
+	text-indent: -1.8em;
+}
+.finish{
+	position: fixed;
+	top:32%;
+	left:20%;
+	width: 60%;
+	min-height: 100px;
+	background-color: #36aaf5;
+	z-index: 10;
+	border-radius: 6px;
+	display: none;
+}
+.finish h2{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+	color: #fff;
+}
+.finish h3.close{
+	width: 100%;
+	margin-top:30%;
+	text-align: center;
+}
+.paycenter{
+	height: 100%;
+	overflow: hidden;
+	padding:0.6em 0;
+	background-color: #eee;
+}
+.block{
+	overflow: hidden;
+    background: #fff;
+    padding: 6px 0;
+    box-shadow: 2px 2px 2px #e0e0e0;
+}
+.block>ul>li{
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+}
+.block span.left{
+	margin-left: 12px;
+	text-align: center;
+	float:left;
+	font-weight: bolder;
+	color: #b8b8b8;
+	font-size: 14px;
+}
+.block span.right{
+	float: right;
+	margin-right:12px;
+	color: #f0870a;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+.block span.center{
+	width: 60%;
+    line-height: 2.8em;
+    float: left;
+    position: relative;
+    color: #A9A9A9;
+}
+h4{
+	height: 26px;
+	padding-left: 10px;
+	margin-top:10px;
+}
+.paylist ul li{
+	width: 100%;
+	height: 3em;
+	line-height: 3em;
+	padding: 0 .5em;
+	margin-bottom: 4px;
+	font-size: 1em;
+	background-color: #fff;
+}
+input[type="radio"]{
+	display: none;
+}
+.paylist ul li img{
+	height: 100%;
+	display: inline-block;
+}
+.paylist ul li span{
+	position: relative;
+	top: -1.2em;
+	left: 0.6em;
+}
+.paylist ul li em{
+	display: block;
+	width: 1.8em;
+	height: 1.8em;
+	float: right;
+	margin-right: 1.3em;
+	margin-top: 0.6em;
+}
+.paylist ul li em.on{
+	background-image: url(../images/select.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.btn{
+	position: fixed;
+	bottom:0;
+	left:0;
+	display: block;
+	width: 100%;
+	border: 0;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4em;
+	background-color: #36aaf5;
+}

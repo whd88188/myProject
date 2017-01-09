@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+	<title>商品详情</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="__CSS__/style.css">
+	<script type="text/javascript" src="__JS__/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="__JS__/script.js"></script>
+</head>
+<body>
+<div class="top">
+	<a href=""><span><img src="images/back.png" alt=""></span></a>
+	<h3>商品详情</h3>
+</div>
+<div class="paycenter">
+    <h4 style="color: #b8b8b8;">选择购买商品:</h4>
+    <div class="paylist">
+		<ul>	
+		  	<label for="s1"><li><b>元宝10个</b><em class="on"></em></li></label>
+		  	<label for="s2"><li><b>元宝50个</b><em></em></li></label>
+			<label for="s3"><li><b>元宝100个</b><em></em></li></label>
+			<label for="s4"><li><b>元宝200个</b><em></em></li></label>
+			<label for="s5"><li><b>元宝500个</b><em></em></li></label>
+			<label for="s6"><li><b>元宝1000个</b><em></em></li></label>
+		</ul>
+	</div>
+	<form id="pay_form" action="" method="post"> 
+		<!--产品名称-->  
+		<input type="radio"  name="subject" id="s1" value="" checked="checked">
+		<input type="radio"  name="subject" id="s2" value="">
+		<input type="radio"  name="subject" id="s3" value="">
+		<input type="radio"  name="subject" id="s4" value="">
+		<input type="radio"  name="subject" id="s5" value="">
+		<input type="radio"  name="subject" id="s6" value="">
+		<!--cp方订单ID。服务端赋值--> 
+	    <input type="hidden" name="app_order_id" value="">
+	    <!--支付总金额，单位：分。服务端赋值-->
+	    <input type="hidden" name="amount" value="">
+	    <!--商品名称。服务端赋值-->
+	    <input type="hidden" name="subject" value="">
+	    <!--商品详情。服务端赋值-->
+	    <input type="hidden" name="body" value="">
+	    <!--回调cp的参数，原样返回。服务端赋值-->
+	    <input type="hidden" name="app_ext" value="">
+	 	<!--支付提交按钮-->
+	    <input type="submit" class="btn" value="立即购买">
+    </form>
+</div> 
+</body>
+</html>

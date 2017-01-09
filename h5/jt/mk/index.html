@@ -1,0 +1,369 @@
+<!DOCTYPE html >
+<html lang="zh-CN">
+<head>
+<title>军团降临</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+<script language="JavaScript" src="jquery.min.js"></script>
+<style type="text/css">
+/* 内外边距通常让各个浏览器样式的表现位置不同 reset style*/
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea,blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+    margin: 0;
+    padding: 0;
+}
+body {
+	margin: 0;
+    padding: 0;
+	min-width:300px;
+	max-width:1080px;
+	margin:0 auto;
+	position:relative;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.content{
+	width: 100%;
+	position: relative;
+}
+#mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+#share{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	display: none;
+}
+#share2{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	display: none;
+}
+#mask2{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	display: none;
+}
+.top{
+	position: relative;
+	line-height: 0;
+}
+/**cnzz统计id**/
+#cnzz_stat_icon_1259092026{
+	display: none;
+}
+/*轮播图片sroll*/
+.sroll{
+	width: 78%;
+	height: 12%;
+	left:10.5%;
+	top:70.8%;
+	position: absolute;
+}
+.sroll .img li {
+	display: inline-block;
+	list-style: none; 
+	position: absolute;
+	width: 100%;
+	top:0; 
+	left:0;
+	display: none;
+}
+.sroll .img li img{
+	width: 100%;
+	height: 100%;
+	border: 2px solid #d79653;
+}
+.btn{
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	color: #b89a7a;
+	font-weight: 900;
+	text-align: center;
+	font-size: 35px;
+	z-index: 11;
+}
+.btn img{
+	width: 100%;
+}
+.right{
+	left:-28px;
+	top:75%;
+}
+.left{
+	right: -30px;
+	top:75%;
+}
+</style>
+</head>
+<body>
+	<!--为兼容微信打开网页所设置的-->
+	<div id="mask"></div>
+	<img id="share" src="images/share.png" />
+	<img id="share2" src="images/share2.png" />
+	<div id="mask2"></div>
+	<div class="content"> 
+		<div class="top">
+	        <img src="images/jt.jpg" width="100%">
+	        <span style="display:block; width:50%; height:10%;position: absolute;left:45%;top:46%;z-index:2;"  class="load"></span>
+		</div>
+	    <div class="clear"></div>
+		<div class="sroll">
+		     <ul class="img"> 
+		        <li><img src="images/1.jpg"></li>
+		        <li><img src="images/2.jpg"></li>
+		        <li><img src="images/3.jpg"></li>
+			</ul>
+			<div class="btn right"><img src="images/left.png" alt=""></div>
+		    <div class="btn left"><img src="images/right.png" alt=""></div>
+		</div>	
+	</div>	
+	<div style="background:#010423;color:#fff;width:100%;">
+    	<span style="display:block;text-align:center;line-height: 20px;font-size:12px;padding: 10px 0;">Copyright © 版权所有：深圳优依购互娱科技有限公司
+    	<br/>粤ICP备15108634号-1</span>
+    </div>
+ 
+<script>
+
+	/******轮播图片******/ 
+	$(document).ready(function(){
+		$(".img li").eq(0).show();
+		var size = $(".img li").size();
+		var i=0;
+		var t=setInterval(move,2000 );
+		function move(){
+		    i++;
+		    if(i==size){
+		      	i=0;
+		    }
+		    $(".img li").eq(i).fadeIn(500).siblings().fadeOut(500);
+		}
+		$(".sroll").hover(function(){
+		    clearInterval(t);
+		},function(){
+		    t=setInterval(move,2500);
+		})
+
+	    var i=0;
+		$(".right").click(function(){
+		  	i++;
+		  	if (i==size){
+		  		i=0;
+		  	}
+		  	$('.img li').eq(i).fadeIn(500).siblings().fadeOut(500);
+		})
+
+	 	var i=0;
+		$(".left").click(function(){
+		  	i--;
+		  	if (i==-1){
+		  		i=size;
+		  	}
+		  	$('.img li').eq(i).fadeIn(500).siblings().fadeOut(500);
+		})
+	 
+	})
+
+	var browser = {
+			versions: function () {
+			var u = navigator.userAgent, app = navigator.appVersion;
+			return { //移动终端浏览器版本信息 
+			ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端 
+			android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器 
+			iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器 
+			iPad: u.indexOf('iPad') > -1, //是否iPad 
+			};
+		  }(),
+		}
+	// 判断是否为微信打开页面
+	function isWeixin(){ 
+	    var ua = navigator.userAgent.toLowerCase(); 
+	    if(ua.match(/MicroMessenger/i)=="micromessenger") { 
+	        return true; 
+	     } else { 
+	        return false; 
+	    } 
+	}
+	//var aa=browser.versions.iPhone || browser.versions.iPad || browser.versions.ios;
+	if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+		if (isWeixin()) {document.getElementById('mask2').style.display = 'block'}
+			else{
+		document.getElementById('mask2').style.display = 'none';
+		}	 
+	}
+	/*
+	else{
+		document.getElementById('mask2').style.display = 'none';
+	}
+	*/
+		
+	document.getElementById("mask2").onclick = function(){
+		if(isWeixin()){
+			document.getElementById('mask2').style.display = 'none';
+			document.getElementById('mask').style.display = 'block';
+			document.getElementById('share2').style.display = 'block';
+		}	 			
+	}
+	document.getElementById('share2').onclick = function(){
+			document.getElementById('mask').style.display = 'none';
+			document.getElementById('share2').style.display = 'none';
+	}	 
+	
+
+
+
+	if (isWeixin()&(browser.versions.android)) {
+			document.getElementById('mask2').style.display = 'block';
+	}
+	else{
+			document.getElementById('mask2').style.display = 'none';
+	}
+
+		document.getElementById("mask2").onclick = function(){
+			if(isWeixin()){
+				document.getElementById('mask2').style.display = 'none';
+				document.getElementById('mask').style.display = 'block';
+				document.getElementById('share').style.display = 'block';
+			}	 			
+		}
+		document.getElementById('share').onclick = function(){
+			document.getElementById('mask').style.display = 'none';
+			document.getElementById('share').style.display = 'none';
+		}
+		 
+	
+    // 判断是否为微信打开页面
+    /*
+	function isWeixin(){ 
+	    var ua = navigator.userAgent.toLowerCase(); 
+	    if(ua.match(/MicroMessenger/i)=="micromessenger") { 
+	        return true; 
+	     } else { 
+	        return false; 
+	    } 
+	}
+	
+	  $(document).ready(function(){
+		if(isWeixin()){
+			document.getElementById('mask2').style.display = 'block';
+		}
+		else{
+			document.getElementById('mask2').style.display = 'none';
+		}
+		document.getElementById("mask2").onclick = function(){
+			if(isWeixin()){
+				document.getElementById('mask2').style.display = 'none';
+				document.getElementById('mask').style.display = 'block';
+				document.getElementById('share').style.display = 'block';
+			}	 			
+		}
+		document.getElementById('share').onclick = function(){
+			document.getElementById('mask').style.display = 'none';
+			document.getElementById('share').style.display = 'none';
+		}
+
+		//监听滚动条，当往下滚动的时候底部下载栏出现
+		$(window).scroll(function() {
+			var  scrolltop=$(document).scrollTop();
+			if(scrolltop>20){
+				 $("#load").css({
+				 	'position': 'fixed',
+				 	bottom: '0px',
+				 	left:'0px'
+				 });
+			}else{
+				$('#load').css({
+					'position': 'static'
+				});
+			}
+		})
+	})
+	*/
+</script>
+
+<script type="text/javascript">
+    //cnzz站长数据统计
+	//声明_czc对象:
+	var _czc = _czc || [];
+	//判断终端信息
+	var browser = {
+			versions: function () {
+			var u = navigator.userAgent, app = navigator.appVersion;
+			return { //移动终端浏览器版本信息 
+			ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端 
+			android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器 
+			iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器 
+			iPad: u.indexOf('iPad') > -1, //是否iPad 
+			};
+		  }(),
+		}
+	if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+		 _czc.push(["_trackEvent", "iPhone进入页面量", "辉/jt/mk", "", "", "iphon"]);
+	}	
+	if (browser.versions.android) {
+		 _czc.push(["_trackEvent", "android进入页面量", "辉/jt/mk", "", "", "android"]);
+	}	
+
+	$(".load").click(function(){
+		if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+			_czc.push(["_trackEvent", "iPhon点击下载", "辉jt/mk点击下载", "辉/jt/mk", "", "iphon"]);
+			window.location.href = "http://yf2.huiyaohuyu.com/apk/jtjl/jt.apk";	
+		}
+		else if (browser.versions.android) {
+			_czc.push(["_trackEvent", "android点击下载", "辉jt/mk点击下载", "辉/jt/mk", "", "android"]);
+			window.location.href = "http://yf2.huiyaohuyu.com/apk/jtjl/jt.apk";	
+		}
+		else{
+			window.location.href = "http://yf2.huiyaohuyu.com/apk/jtjl/jt.apk";
+		}
+	})
+	
+    _czc.push(["_setAccount", "1259092026"]);
+    _czc.push(﻿["_trackPageview","/h5/cq/mk/","http://www.huiyaohuyu.com/h5/cq/mk/"]); 
+     var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259092026'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1259092026%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+
+    // 热云数据
+	var timestamp = new Date().getTime();
+	  var data = { "appid":"8ae913dc09ee01f826a38432e55e9c13",
+	      "context":{ "deviceid":timestamp },
+	    "what":"event_4",
+	    "who":"liulun@huiyaohuyu.com"
+	    };
+	    $(".load").click(function(){
+		 $.post(
+	      "http://log.reyun.com/receive/track/event",
+			  JSON.stringify(data),
+	      function(data){}
+	    )
+	})
+</script>	 
+</body>
+</html>
+
+
+
+
+ 
+ 
+

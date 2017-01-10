@@ -1,0 +1,3448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>英雄库</title>
+<meta charset="UTF-8" />
+<meta name="keywords" content="军团降临，军团降临英雄，军团降临英雄库，军团降临英雄"/>
+<meta name="description" content="军团降临，军团降临官网" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript"src="../js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript"src="../js/common.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//通过锚点定位来自首页查看相应的英雄
+		var url=window.location.search ;
+		var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+		for (var i = 1; i <= 9; i++) {
+			 if (url=="?id="+i) {
+			 	$("."+i).show();
+			 	$(".hero_page").hide();
+		 	    $("body").scrollTop(300);
+			}
+		}
+
+        for (var i = 10; i <= 12; i++) {
+         	if (url=="?id="+i) {
+         		$(".h_right ul li").eq(1).trigger("click");
+		 	 	$(".zhaoList li").eq(i-10).trigger("click");
+			 	$("body").scrollTop(300);
+         	}
+        }
+        
+	 })
+	 
+</script>
+</head>
+<body>
+<div class="hero_container" >
+	<!--头部导航-->
+	<div class="navbox">
+			<div class="nav">
+				<div class="logo">
+					<a href="../"><img src="../images/logo.png" ></a>
+					<h2>军团降临</h2>
+					<h3>新召唤玩法！</h3>
+				</div>
+				<div class="nav_li">	
+					<ul >
+						<a href="../"><li>官网首页</li></a>
+						<a href="../news/"><li>新闻中心</li></a>
+						<a href="../hero/"><li class="on">英雄库</li></a>
+				<!--	<a href="../date/"><li>游戏资料</li></a>     -->
+						<a href="../strategy/"><li>游戏攻略</li></a>
+						<a href="http://bbs.huiyaohuyu.com"><li>论坛中心</li></a>
+					</ul>
+				</div>
+			</div>
+	</div>
+	<!--英雄列表-->
+	<div class="hero_center">
+		<div class="h_right">
+	 		<ul>
+	 			<li><img src="../images/hero_act.png" >全部</li>
+	 			<li><img src="../images/hero_act.png" class="hide">召唤师</li>
+	 			<li><img src="../images/hero_act.png" class="hide">随从</li>
+	 			<li><img src="../images/hero_act.png" class="hide">坐骑</li>
+	 		</ul>
+	 	</div>
+	 	<div class="h_left">
+	 		<div class="all">
+	 			<div class="all_list">
+	 				 <ul class="hero_img">
+	 				 	<li><img src="../images/hero/hr(1).png" ><div class="hide">详细资料</div><h4>艾路侍从</h4></li>
+	 				 	<li><img src="../images/hero/hr(2).png" ><div class="hide">详细资料</div><h4>潜行专家</h4></li>
+	 				 	<li><img src="../images/hero/hr(3).png" ><div class="hide">详细资料</div><h4>暗夜射手</h4></li>
+	 				 	<li><img src="../images/hero/hr(4).png" ><div class="hide">详细资料</div><h4>宝石男巫</h4></li>
+	 				 	<li><img src="../images/hero/hr(5).png" ><div class="hide">详细资料</div><h4>毒泥怪</h4></li>
+	 				 	<li><img src="../images/hero/hr(6).png" ><div class="hide">详细资料</div><h4>冰霜鱼人</h4></li>
+	 				 	<li><img src="../images/hero/hr(7).png" ><div class="hide">详细资料</div><h4>部落酋长</h4></li>
+	 				 	<li><img src="../images/hero/hr(8).png" ><div class="hide">详细资料</div><h4>草原狮</h4></li>
+	 				 	<li><img src="../images/hero/hr(9).png" ><div class="hide">详细资料</div><h4>豺狼人头领</h4></li>
+	 				 	<li><img src="../images/hero/hr(10).png" ><div class="hide">详细资料</div><h4>吵闹机器人</h4></li>
+	 				 	<li><img src="../images/hero/hr(11).png" ><div class="hide">详细资料</div><h4>持盾卫士</h4></li>
+	 				 	<li><img src="../images/hero/hr(12).png" ><div class="hide">详细资料</div><h4>刺壳龟</h4></li>
+	 				 	<li><img src="../images/hero/hr(13).png" ><div class="hide">详细资料</div><h4>丛林守卫</h4></li>
+	 				 	<li><img src="../images/hero/hr(14).png" ><div class="hide">详细资料</div><h4>大德鲁伊</h4></li>
+	 				 	<li><img src="../images/hero/hr(15).png" ><div class="hide">详细资料</div><h4>地精切割机</h4></li>
+	 				 	<li><img src="../images/hero/hr(16).png" ><div class="hide">详细资料</div><h4>地精商人</h4></li>
+	 				 	<li><img src="../images/hero/hr(17).png" ><div class="hide">详细资料</div><h4>恶魔猎手</h4></li>
+	 				 	<li><img src="../images/hero/hr(18).png" ><div class="hide">详细资料</div><h4>飞刀表演者</h4></li>
+	 				 	<li><img src="../images/hero/hr(19).png" ><div class="hide">详细资料</div><h4>钢鬃灰熊</h4></li>
+	 				 	<li><img src="../images/hero/hr(20).png" ><div class="hide">详细资料</div><h4>古树保卫者</h4></li>
+	 				 	<li><img src="../images/hero/hr(21).png" ><div class="hide">详细资料</div><h4>火药搬运工</h4></li>
+	 				 	<li><img src="../images/hero/hr(22).png" ><div class="hide">详细资料</div><h4>机械传送者</h4></li>
+	 				 	<li><img src="../images/hero/hr(23).png" ><div class="hide">详细资料</div><h4>金色指挥官</h4></li>
+	 				 	<li><img src="../images/hero/hr(24).png" ><div class="hide">详细资料</div><h4>酒馆老板</h4></li>
+	 				 	<li><img src="../images/hero/hr(25).png" ><div class="hide">详细资料</div><h4>酒仙</h4></li>
+	 				 	<li><img src="../images/hero/hr(26).png" ><div class="hide">详细资料</div><h4>巨牙野猪</h4></li>
+	 				 	<li><img src="../images/hero/hr(27).png" ><div class="hide">详细资料</div><h4>科科兽</h4></li>
+	 				 	<li><img src="../images/hero/hr(28).png" ><div class="hide">详细资料</div><h4>狂兽人</h4></li>
+	 				 	<li><img src="../images/hero/hr(29).png" ><div class="hide">详细资料</div><h4>雷神索尔</h4></li>
+	 				 	<li><img src="../images/hero/hr(30).png" ><div class="hide">详细资料</div><h4>獠牙狂暴者</h4></li>
+	 				 	<li><img src="../images/hero/hr(31).png" ><div class="hide">详细资料</div><h4>烈火精灵</h4></li>
+	 				 	<li><img src="../images/hero/hr(32).png" ><div class="hide">详细资料</div><h4>麦田守望者</h4></li>
+	 				 	<li><img src="../images/hero/hr(33).png" ><div class="hide">详细资料</div><h4>魅魔</h4></li>
+	 				 	<li><img src="../images/hero/hr(34).png" ><div class="hide">详细资料</div><h4>魔晶龙</h4></li>
+	 				 	<li><img src="../images/hero/hr(35).png" ><div class="hide">详细资料</div><h4>牛头酋长</h4></li>
+	 				 	<li><img src="../images/hero/hr(36).png" ><div class="hide">详细资料</div><h4>破法剑士</h4></li>
+	 				 	<li><img src="../images/hero/hr(37).png" ><div class="hide">详细资料</div><h4>丛林豹</h4></li>
+	 				 	<li><img src="../images/hero/hr(38).png" ><div class="hide">详细资料</div><h4>生命红龙</h4></li>
+	 				 	<li><img src="../images/hero/hr(39).png" ><div class="hide">详细资料</div><h4>圣光骑士</h4></li>
+	 				 	<li><img src="../images/hero/hr(40).png" ><div class="hide">详细资料</div><h4>狮鹫</h4></li>
+	 				 	<li><img src="../images/hero/hr(41).png" ><div class="hide">详细资料</div><h4>石峰巨人</h4></li>
+	 				 	<li><img src="../images/hero/hr(42).png" ><div class="hide">详细资料</div><h4>双头魔巫师</h4></li>
+	 				 	<li><img src="../images/hero/hr(44).png" ><div class="hide">详细资料</div><h4>缝合魔</h4></li>
+	 				 	<li><img src="../images/hero/hr(45).png" ><div class="hide">详细资料</div><h4>王牌火枪</h4></li>
+	 				 	<li><img src="../images/hero/hr(46).png" ><div class="hide">详细资料</div><h4>巫医先知</h4></li>
+	 				 	<li><img src="../images/hero/hr(47).png" ><div class="hide">详细资料</div><h4>妩媚兽人</h4></li>
+	 				 	<li><img src="../images/hero/hr(48).png" ><div class="hide">详细资料</div><h4>炎魔之王</h4></li>
+	 				 	<li><img src="../images/hero/hr(49).png" ><div class="hide">详细资料</div><h4>羊头萨满</h4></li>
+	 				 	<li><img src="../images/hero/hr(54).png" ><div class="hide">详细资料</div><h4>侏儒工程师</h4></li>
+	 				 	<li><img src="../images/hero/hr(55).png" ><div class="hide">详细资料</div><h4>烛光狗头人</h4></li>
+	 				 </ul>
+	 				 <div class="hero_detail">
+		 				 <ul >
+		 				 	<li class="hide 1" >
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(1).png">
+
+		 				 				<h2>艾路侍从</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：飞行</h3>
+		 				 				<p>将肉体与灵魂都敬献给艾路，永世侍奉艾路换来了天堂的制式长弓和能操控旋风和雷霆翅膀。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/1-1.png"><h2>圣洁旋风<span>默认大招</span></h2>
+		 				 					<p>[大招]吹出一条直线行走的风，造成伤害并击退，25%概率令目标混乱，对1级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/1-2.png"><h2>天使雷霆<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[光环]增加本方所有人的雷属性伤害，额外提高物攻。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/1-3.png"><h2>天堂之光<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]哀嚎，降低敌方所有单位的物防和魔防，并沉默8秒。对20级以上的单位命中率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/1-4.png"><h2>风之掌控<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加自身攻击速度25%。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide 2">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(2).png">
+		 				 				<h2>潜行专家</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>她的身世一直是谜，只知道曾效忠于某位高贵的国王，悄无声息的行动总能够给敌人致命一击。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/2-1.png"><h2>背叛<span>默认大招</span></h2>
+		 				 					<p>[大招]使一个敌方随从攻击力大幅提升，并混乱。持续5s，对1级以上目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/2-2.png"><h2>潜行帷幕<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]让所我方所有随从提升闪避率20%，持续11s。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/2-3.png"><h2>致命药膏<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[我方召唤师每释放一次技能时]就会给自己的武器附加药膏,攻击力提升和暴击,持续30秒,CD20秒</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/2-4.png"><h2>备战就绪<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[每当受到伤害时]增加1点物防，1点魔防持续30秒</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide 3">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(3).png">
+		 				 				<h2>暗夜射手</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：人形</h3>
+		 				 				<p>躲藏在暗处的精灵射手，擅长给人出其不意的攻击，并且很难被敌人发现。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/3-1.png"><h2>穿云箭<span>默认大招</span></h2>
+		 				 					<p>[大招]直线穿透攻击，并令目标能量降低，若目标能量低于20点，伤害提升到1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/3-2.png"><h2>击落<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]随机射击2个目标飞行单位，并击落4秒，对1级以上的目标击落效果降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/3-3.png"><h2>偷袭<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[偶尔]对敌方召唤师造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/3-4.png"><h2>隐匿行踪<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过20%的最大生命时]让自己隐藏起来，闪躲率提升30%，持续30秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide 4">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(4).png">
+		 				 				<h2>宝石男巫</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>来自著名修道院的牧师，平日会将神圣能量储存在杖首的宝石之中，在有人需要救治时再将能量释放出来。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/4-1.png"><h2>救护<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/4-2.png"><h2>心灵救助<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[当有角色获得治疗时]增加能量最少的随从SP30，冷却20秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/4-3.png"><h2>驱散<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]解除全员的混乱和停止，并使全员混乱和停止抗性提高，持续20秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/4-4.png"><h2>恶魔专家<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]对恶魔造成的伤害增加50%，并提升攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide 5">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(5).png">
+		 				 				<h2>毒泥怪</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：恶魔</h3>
+		 				 				<p>黏糊糊的身体，即使在中箭之后也会快速的愈合，如果不幸被它体内的液体喷中，不仅皮肤会被溃烂，连手中的刀剑都会腐蚀。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/5-1.png"><h2>酸雨<span>默认大招</span></h2>
+		 				 					<p>[大招]对敌方全体造成3次毒属性伤害并附加中毒效果，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/5-2.png"><h2>腐蚀武器<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]随机减少敌方召唤师技能1次，并降低其攻击力，持续30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/5-3.png"><h2>恶魔涂层<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]降低所有友方受到的毒属性伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/5-4.png"><h2>箭矢缓冲<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]受到射手的伤害降低。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide 6">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(6).png">
+		 				 				<h2>冰霜鱼人</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：恶魔</h3>
+		 				 				<p>操纵潮汐之力引导自己的族人。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/6-1.png"><h2>潮汐赐福<span>默认大招</span></h2>
+		 				 					<p>[大招]为本方所有战士和骑士回复生命，并提升魔防，持续20秒，若目标为恶魔，治疗效果提升为1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/6-2.png"><h2>寒气喷吐<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[进场时]令对方所有机械随从生锈，造成攻击力下降、攻击速度下降，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/6-3.png"><h2>寒光<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]提升我方牧师和法师的物理防御。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/6-4.png"><h2>鱼人智慧<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加魔防。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide 7">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(7).png">
+		 				 				<h2>部落酋长</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：人形</h3>
+		 				 				<p>传说中兽人部落的酋长，因为永远奋战在战争的第一线而在部落中拥有至高的威信。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/7-1.png"><h2>旋风斩<span>默认大招</span></h2>
+		 				 					<p>[大招]像电扇一样朝敌方旋转，对敌人造成100%物理伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/7-2.png"><h2>嘲讽<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[被动]更容易吸引敌人的攻击，并且提升自己的物防和魔防。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/7-3.png"><h2>复仇之斧<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[受到伤害时]10%概率向敌方砍出一股气浪，对路径上的敌人造成物理伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/7-4.png"><h2>冲锋<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[入场时]即拥有70点能量。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide 8">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(8).png">
+		 				 				<h2>草原狮</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：野兽</h3>
+		 				 				<p>一声怒吼可以令所有前排胆寒畏缩，可以很好的压制敌人阵线。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/8-1.png"><h2>雄狮咆哮<span>默认大招</span></h2>
+		 				 					<p>[大招]击退敌方战士和骑士，并75%概率使对方法师和射手混乱3秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/8-2.png"><h2>狮之优雅<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]主动增加己方野兽攻击力和防御力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/8-3.png"><h2>鲜肉的诱惑<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]召唤一只20级的小狮子。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/8-4.png"><h2>百兽之王<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]受到野兽的伤害降低。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide 9">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(9).png">
+		 				 				<h2>豺狼人头领</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：人形</h3>
+		 				 				<p>聚集在野外的豺狼人都聚集在他的周围，经常袭击过往的旅行者，即使头领被赏金猎人除掉，新的继任者也会随后出现。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/9-1.png"><h2>召唤豺狼<span>默认大招</span></h2>
+		 				 					<p>[大招]召唤一只1级的豺狼人。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/9-2.png"><h2>救护<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[受到攻击时5%概率]会丢出自己的斧头反击，造成贯穿伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/9-3.png"><h2>救护<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]冲向一个随机目标疯狂的砍3斧头，削减其物防，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/9-4.png"><h2>救护<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]提升攻击力</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide ">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(10).png">
+		 				 				<h2>吵闹机器人</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：机械</h3>
+		 				 				<p>吵闹的性格，但具有坚硬的外壳可以抵挡强大的伤害。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/10-1.png"><h2>你~好~！<span>默认大招</span></h2>
+		 				 					<p>[大招]给自己附加一个护盾，吸收伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/10-2.png"><h2>你好！<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]挥砍前排范围物理伤害，并降低物防。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/10-3.png"><h2>你好！你好！<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]用铃铛震晕一个随机随从7秒，对21级以上目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/10-4.png"><h2>高音扬声器3000<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[光环]降低敌方所有单位的攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(11).png">
+		 				 				<h2>持盾卫士</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>过的是刀头上舔血的生活，动作虽不灵活但有一面受过祖先祝福的盾牌，战斗起来也挺安心。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/11-1.png"><h2>毒斧<span>默认大招</span></h2>
+		 				 					<p>[大招]扔出一把抛物线的斧子，贯穿天空和地面上随从，造成毒伤并中毒，若自身魔防提升，则中毒伤害提升到1.5倍</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/11-2.png"><h2>部落盾墙<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]架起盾牌提升己方所有的物防和魔防，持续30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/11-3.png"><h2>灵魂增强<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[任意人死亡时]短时间提升自己的物理防御。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/11-4.png"><h2>强健<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加生命上限。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(12).png">
+		 				 				<h2>刺壳龟</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：野兽</h3>
+		 				 				<p>没有什么比龟壳更好的盾牌了，他能够抵抗各种物理伤害。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/12-1.png"><h2>甲壳护盾<span>默认大招</span></h2>
+		 				 					<p>[大招]缩进龟甲15秒,增加防御，并对攻击它的目标造成攻击者攻击力的伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/12-2.png"><h2>野兽警戒<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[我方战士入场时]为永久其增加物理防御</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/12-3.png"><h2>强效耐力<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]增加生命值上限</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/12-4.png"><h2>龟壳防御<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加防御力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(13).png">
+		 				 				<h2>丛林守卫</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：恶魔</h3>
+		 				 				<p>发动丛林的再生之力，可以回复本方全体生命。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/13-1.png"><h2>野性成长<span>默认大招</span></h2>
+		 				 					<p>[大招]治疗自己及周围的友方,同时增加物防魔防15秒，若目标身上有持续治疗效果，治疗量提升到1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/13-2.png"><h2>月火术<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[被动]当敌方英雄召唤随从时，对敌方所有随从造成电伤害，CD3秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/13-3.png"><h2>禁魔<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]沉默敌方怒气值最高的随从9秒，若目标的SP高于60，则将其SP降低到60，对21级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/13-4.png"><h2>梦境之力<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加魔法攻击力</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(14).png">
+		 				 				<h2>大德鲁伊</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>大德鲁伊是一名掌控大自然的智者，但也会用自己的利爪撕碎任何入侵者。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/14-1.png"><h2>横扫<span>默认大招</span></h2>
+		 				 					<p>[大招]挥动左右钢爪，对敌方造成无视防御的伤害，且造成持续流血，若目标身上有持续治疗效果，直接伤害提升为1.5倍</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/14-2.png"><h2>狂暴回复<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[当受到伤害时]有几率在6秒内恢复12%的生命值，但会消耗20点能量，该技能每8秒触发一次</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/14-3.png"><h2>生命之树<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]本方所有随从生命上限增加。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/14-4.png"><h2>剧毒之种<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]给敌方一个随从种植一颗剧毒之种，在其死亡时发生爆炸，造成范围毒伤害。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(15).png">
+		 				 				<h2>地精切割机</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：机械</h3>
+		 				 				<p>抛射出巨型的链锯，切割前方的一切敌人。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/15-1.png"><h2>锯刃发射<span>默认大招</span></h2>
+		 				 					<p>[大招]发射链锯穿过敌人造成AOE伤害，对人类的伤害*1.5，若目标命中率降低，伤害提升为1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/15-2.png"><h2>地精的智慧<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]使友方一个机械获得一个吸收伤害的护盾。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/15-3.png"><h2>回收再利用<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[每当一个机械死亡时]获得圣盾，并提升攻击，持续10s</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/15-4.png"><h2>弹射座椅启动<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]召唤一个40级的地精工程师</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(16).png">
+		 				 				<h2>地精商人</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>别看他的背包不大，但在他这里可以买到世上所有的东西。有钱就能解决一切问题。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/16-1.png"><h2>贿赂<span>默认大招</span></h2>
+		 				 					<p>[大招]使一个随机敌人混乱4.6秒，该随从在攻击1次后会混乱另一目标，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/16-2.png"><h2>金钱万能<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]清除1米范围内敌人所有的主动buff效果。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/16-3.png"><h2>有钱能使鬼推磨<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当一个友方死亡时]复活他，但只有10%生命值；仅1次。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/16-4.png"><h2>移动银行<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]恢复10~70点能量</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(17).png">
+		 				 				<h2>恶魔猎手</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：恶魔</h3>
+		 				 				<p>他在地上时是一名骁勇的战士，当他变身之后又可以翱翔在天空，变化莫测。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/17-1.png"><h2>恶魔变身<span>默认大招</span></h2>
+		 				 					<p>[大招]变身成为一个1级的恶魔。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/17-2.png"><h2>献祭光环<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[被动]周期性对周围造成伤害</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/17-3.png"><h2>不灭决心<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过10%的最大生命时]会提高防御，持续5秒，该效果有20秒的冷却时间。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/17-4.png"><h2>闪避<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]闪避提高60%，持续3秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(18).png">
+		 				 				<h2>飞刀表演者</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：人形</h3>
+		 				 				<p>飞刀在他手中被运用的灵活多变，如果你不想被他射中脑袋，最好在头上放一只苹果。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/18-1.png"><h2>连发飞刀<span>默认大招</span></h2>
+		 				 					<p>[大招]对敌方后排发射多枚飞刀，造成伤害和中毒效果。中毒5秒每1秒造成伤害，若目标身上存在持续伤害，则中毒伤害提高到2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/18-2.png"><h2>临门一刀<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[每当有随从入场时]则随机朝一名敌人发射飞刀。造成物理伤害，CD3秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/18-3.png"><h2>削苹果<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[每当一个敌方随从死亡时]恢复自己生命，并提高攻击力。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/18-4.png"><h2>熟练瞄准<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[每当我方英雄召唤法师或射手时]增加自己暴击。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(19).png">
+		 				 				<h2>钢鬃灰熊</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：野兽</h3>
+		 				 				<p>传说它曾是某位猎人的伙伴，被训练了精湛的生存能力和战斗技巧。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/19-1.png"><h2>舔舐伤口<span>默认大招</span></h2>
+		 				 					<p>[大招]舔舐伤口，回复生命，并在15秒内提升暴击率15%，若自身攻击力得到提升，治疗量提升到1.1倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/19-2.png"><h2>熊爪<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]挥动爪子拍人，造成无视防御的小范围伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/19-3.png"><h2>熊之伤<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过15%的最大生命时]提高攻击力，并附加10%吸血效果，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/19-4.png"><h2>嘲讽<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]更容易吸引敌人的攻击，并且自身提升物防、魔防。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(20).png">
+		 				 				<h2>古树保卫者</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：恶魔</h3>
+		 				 				<p>虽然看起来像一棵树，但他却可以随意的走动，经常有迷路的旅人跟随他的灯光找到回家的路。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/20-1.png"><h2>群体缠绕<span>默认大招</span></h2>
+		 				 					<p>[大招]缠绕住所有敌方随从造成晕眩，对1级以上目标几率降低，并吸血5次，但会为对手每次增加15点能量。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/20-2.png"><h2>树枝缠绕<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]攻击者有10%的几率被缠绕，降低30%的攻击速度8秒</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/20-3.png"><h2>树荫庇护<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]增加生命恢复速度</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/20-4.png"><h2>嘲讽<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]更容易吸引敌人的攻击，并且自身提升物防、魔防。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(21).png">
+		 				 				<h2>火药搬运工</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：人形</h3>
+		 				 				<p>经常搞不清方向，把手中炸弹随意乱扔。背着的可不是酒桶，而是满满的炸药，说必定哪天摔了一跤就会~嘣！</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/21-1.png"><h2>死亡炸药<span>默认大招</span></h2>
+		 				 					<p>[大招]冲向敌人后排，然后引爆自己的炸药桶，对所有人造成火焰伤害，若目标魔防下降，则有75%几率眩晕其4秒，对1级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/21-2.png"><h2>炸弹来啦！<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]不分敌我的随机扔3颗炸弹。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/21-3.png"><h2>易燃易爆<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]受到攻击时，有可能自爆，对场上所有人造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/21-4.png"><h2>火药精通<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加火属性抗性。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(22).png">
+		 				 				<h2>机械传送者</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：机械</h3>
+		 				 				<p>不要被他巨大的铁拳头所迷惑，那只是为了在传送功能启动时让机身更为稳定的配重。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/22-1.png"><h2>毁灭激光<span>默认大招</span></h2>
+		 				 					<p>[大招]伤害敌方，并致盲敌方4.5秒，若目标的攻击力降低，则沉默5秒，对1级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/22-2.png"><h2>能源补给<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[我方其他机械入场时]让其获得30点能量,CD13秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/22-3.png"><h2>机械跃迁<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[我方其他机械死亡时]重新传送一个该机械随从，持有20%的血量。只可触发1次</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/22-4.png"><h2>机械强固<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]提高法术伤害。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(23).png">
+		 				 				<h2>金色指挥官</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>他是金色骑士团的成员，坚决的贯彻团长发布的命令。在圣光的照耀下拥有坚不可摧的力量。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/23-1.png"><h2>远程支持<span>默认大招</span></h2>
+		 				 					<p>[大招]提升己方弓手和法师的攻击力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/23-2.png"><h2>盾击<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]用盾击退最近的目标，造成物理伤害，并50%混乱3秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/23-3.png"><h2>雷光护盾<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]给自己附加一个护盾吸收伤害，护盾爆炸时击退近处的敌人，并造成雷属性伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/23-4.png"><h2>谦逊<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]使一个随机的敌方随从攻击和魔攻降低，持续15秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(24).png">
+		 				 				<h2>酒馆老板</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>没有比酒馆老板更好客的人了，只是有时会在酒里掺水。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/24-1.png"><h2>免费午餐<span>默认大招</span></h2>
+		 				 					<p>[大招]令我方生命最少角色回复生命、怒气，并10秒内提升攻击力，如果目标的生命值低于35%，治疗效果提升50%。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/24-2.png"><h2>请客<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]入场时请所有人喝啤酒，提升所有随从的攻击和怒气。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/24-3.png"><h2>假酒<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]向敌人随机一个随从扔出一杯假酒，喝下后攻击速度、防御力大幅下降，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/24-4.png"><h2>千杯不倒<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]眩晕，混乱抗性提升</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(25).png">
+		 				 				<h2>酒仙</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：人形</h3>
+		 				 				<p>来自热情好客的熊猫大陆，天生的好酒量。即使在战场上也会时不时的举起酒壶喝上几口，他说这样可以令他的步伐很稳健。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/25-1.png"><h2>回来喝酒<span>默认大招</span></h2>
+		 				 					<p>[大招]让我方血量最少的随从回到牌堆，恢复所有生命并且重置其所有技能的剩余次数但会清空能量且有60秒的冷却时间。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/25-2.png"><h2>酒雾<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]喷吐酒雾，降低对方前排的魔抗10s并造成火属性伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/25-3.png"><h2>有朋自远方来<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[每当我方召唤人形随从时]则饮下烈酒攻击变高，并同时回复少量HP值</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/25-4.png"><h2>醉拳<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加闪避以及暴击。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(26).png">
+		 				 				<h2>巨牙野猪</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：野兽</h3>
+		 				 				<p>巨大的獠牙是它值得炫耀的武器，当他怒不可遏的朝你冲撞过来之时，你要么立即飞起来，要么等着飞起来。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/26-1.png"><h2>獠牙冲顶<span>默认大招</span></h2>
+		 				 					<p>[大招]冲顶敌人的地面单位，然后再冲顶回来，对沿途敌人物理伤害。最多冲顶5次敌人。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/26-2.png"><h2>嚎叫<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]降低敌人全体的物防和魔防,持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/26-3.png"><h2>野兽怒火<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当我方野兽死亡时]自身的攻击力提升，持续10秒</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/26-4.png"><h2>冲锋<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[入场时]即拥有70点能量。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(27).png">
+		 				 				<h2>科科兽</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：野兽</h3>
+		 				 				<p>巨大的战场怪兽，突进在前方可以对敌人造成巨大的压迫感，在他身后的友方部队则会体会到可靠的保护。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/27-1.png"><h2>脆弱震击<span>默认大招</span></h2>
+		 				 					<p>[大招]对敌方血量最少的随从造成大量伤害，若其身上有无敌效果，则眩晕7.5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/27-2.png"><h2>顶撞<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]撕裂近处的对手，造成流血效果。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/27-3.png"><h2>铁山靠<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]将敌人的前排战士击退，并减速。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/27-4.png"><h2>开路先锋<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[光环]增加我方射手的攻击速度。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(28).png">
+		 				 				<h2>狂兽人</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：人形</h3>
+		 				 				<p>强壮的体魄无人能及，敌人的鲜血可自己的鲜血都能让他越战越勇。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/28-1.png"><h2>嗜血成性<span>默认大招</span></h2>
+		 				 					<p>[每当敌人死亡时]则大幅提升自己的攻击速度，并提高自身攻击力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/28-2.png"><h2>鲜血祭斧<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]对自身造成50%的伤害，提升攻击力、暴击率和攻速，持续30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/28-3.png"><h2>茹毛饮血<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]所有伤害都吸血12%</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/28-4.png"><h2>鲁莽<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]每次攻击提高3点攻击力，并额外获得5点怒气</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(29).png">
+		 				 				<h2>雷神索尔</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>体内积聚雷电的力量，可以引导雷电轰击敌人，如果雷电之力附着在队友身上，那真的是会产生迅雷不及掩耳盗铃响叮当的速度。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/29-1.png"><h2>闪电风暴<span>默认大招</span></h2>
+		 				 					<p>[大招]对所有地方随从造成0.7到1.3倍的闪电伤害。有概率10%定身6秒，若目标已被定身，则几率变为100%，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/29-2.png"><h2>大地震击<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]对随机一个随从造成雷电伤害，并沉默5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/29-3.png"><h2>风怒武器<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[偶尔]让一个随从的攻击速度增加70%，持续5.5秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/29-4.png"><h2>治疗之泉图腾<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]召唤一个会不断治疗的图腾，图腾会在治疗5次或受到3次伤害后消失</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(30).png">
+		 				 				<h2>獠牙狂暴者</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：恶魔</h3>
+		 				 				<p>狂躁的恶魔对鲜血有特殊的喜爱，在尖锐的獠牙掀开伤口之后，他就贪婪的吮吸。如果不幸将其激怒，后果将更为可怕。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/30-1.png"><h2>饥渴恶魔<span>默认大招</span></h2>
+		 				 					<p>[大招]吸取最近的敌人的血，并损伤其能量。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/30-2.png"><h2>激怒<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过15%的最大生命时]攻击力提升。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/30-3.png"><h2>恶魔战友<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当有任何恶魔死亡时]攻击力提升，持续30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/30-4.png"><h2>硬化皮肤<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]物理防御提升</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(31).png">
+		 				 				<h2>烈火精灵</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：恶魔</h3>
+		 				 				<p>在地狱烈焰中诞生的小鬼，在与其签订契约之后可以为人所驱使，但代价也是可怕的。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/31-1.png"><h2>烈焰火柱<span>默认大招</span></h2>
+		 				 					<p>[大招]在敌方前排筑起一道火墙，只要经过其中的随从都会受到火焰伤害，防御越高，受到的伤害越高，对1级以上的单位几率下降。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/31-1.png"><h2>灼疗主人<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[进场时]缓慢恢复召唤师血量并提升攻击力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/31-1.png"><h2>噬体之种<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[我方召唤师释放技能时]燃烧对方一个随从，降低其魔防，持续13秒，CD30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/31-1.png"><h2>血红契约<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[我方有随从入场时]给该友方随从增加生命上限。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(32).png">
+		 				 				<h2>麦田守望者</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：机械</h3>
+		 				 				<p>本身就是用破碎的零件拼装而成，放在田里可以吓走来偷食的野兽，但自动给他安装了自动马达之后，也可以帮着收割庄稼。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/32-1.png"><h2>快速收割<span>默认大招</span></h2>
+		 				 					<p>[大招]造成附近敌人持续物理伤害，并为我方人形随从恢复生命，若自身拥有护盾效果，伤害提升，若目标身上拥有护盾，伤害提升</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/32-2.png"><h2>复制零件<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[死亡时]用自己的零件拼凑出一个自己1级小型复制品。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/32-3.png"><h2>守望者 <span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当对方召唤野兽时]释放一个AOE对全体野兽造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/32-4.png"><h2>野兽克星<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]对野兽造成的伤害提升至1.5倍，并提升自身攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(33).png">
+		 				 				<h2>魅魔</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：飞行</h3>
+		 				 				<p>深知男人的弱点，没有一个成年男人可以逃脱她那魅惑的眼神，在你神魂颠倒之时，她已经取了你的性命。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/33-1.png"><h2>魅惑人群<span>默认大招</span></h2>
+		 				 					<p>[大招]混乱对方所有人型随从5.1秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/33-2.png"><h2>魅惑单体<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]50%混乱对方能量最多的随从3.4秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/33-3.png"><h2>轻盈<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]被动增加闪避率5%。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/33-4.png"><h2>美貌<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]受到人类的伤害降低。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(34).png">
+		 				 				<h2>魔晶龙</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：飞行</h3>
+		 				 				<p>体力聚集着大量的魔法能量，从而让外来的魔法攻击很难对其造成伤害。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/34-1.png"><h2>双重吐息<span>默认大招</span></h2>
+		 				 					<p>[大招][-]使用冰球75%几率单体定身3秒，对级以上单位效果下降，然后喷吐火焰造成范围伤害，若目标被眩晕或混乱，造成持续伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/34-2.png"><h2>灵龙护盾<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[进场时][-]离自己最远的一个随从，获得法术伤害减免，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/34-3.png"><h2>法力磷粉<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时][-]散落出一片闪亮的磷粉持续7.7秒，触碰到的角色可以持续获得法力，间隔1.3秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/34-4.png"><h2>法术折射<span>进阶到紫色解锁</span></h2>
+		 				 					<p>提升魔防</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(35).png">
+		 				 				<h2>牛头酋长</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：人形</h3>
+		 				 				<p>大地母亲最忠实的仆人，领导着自己的族人在贫瘠的土地上艰苦求生，艰苦的环境培给了他强健的体魄和坚定的意志。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/35-1.png"><h2>战争践踏<span>默认大招</span></h2>
+		 				 					<p>[大招]猛踩地面，晕眩敌方所有随从1.5秒，对1级以上随从几率降低，造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/35-2.png"><h2>雷霆崖之矛<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[敌方任意人被施加护盾时]向其丢出长矛，戳破他的盾，并击晕所有敌方单位2秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/35-3.png"><h2>领袖光辉<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]所有战士获得技能：当受到35%以上生命值伤害释放战争践踏，眩晕所有对手1.4秒，对1级以上单位几率降低，并造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/35-4.png"><h2>继承遗志<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]召唤40级的牛头继承者。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(36).png">
+		 				 				<h2>破法剑士</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>他是法师的克星，能够利用法师心中对魔法的狂热而引爆他们。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/36-1.png"><h2>破法<span>默认大招</span></h2>
+		 				 					<p>[大招]基于所有敌方随从当前SP，燃烧其SP的38%，并造成生命伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/36-2.png"><h2>静默诅咒<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]沉默SP最多的一个随从 持续6秒，若目标已被沉默，则眩晕2.5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/36-3.png"><h2>法师宿敌<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]对所有法师造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/36-4.png"><h2>法术洞悉<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]受到法师的伤害降低。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(37).png">
+		 				 				<h2>丛林豹</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：野兽</h3>
+		 				 				<p>动作敏捷的杀手，最能发现猎物的弱点，从而一口咬住咽喉，招招致命从不失手。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/37-1.png"><h2>致命之吼<span>默认大招</span></h2>
+		 				 					<p>[大招]增加我方所有随从的暴击几率，持续10秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/37-2.png"><h2>躲避之吼<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]增加自身闪避，持续20秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/37-3.png"><h2>致命挣扎<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过20%的最大生命时]，提升自己速度和暴击，持续15秒，并撕咬最近的敌人造成伤害，有50%概率沉默5秒，对21级以上的单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/37-4.png"><h2>人类克星<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]对人类造成的伤害提升至1.5倍，并提升自身攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(38).png">
+		 				 				<h2>生命红龙</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：飞行</h3>
+		 				 				<p>体力蕴含巨大的生命活力，可以分享给己方的随从。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/38-1.png"><h2>红龙之血<span>默认大招</span></h2>
+		 				 					<p>[大招]牺牲自身当前生命值的50%，使所有随从恢复生命值，目标损失血量越多，治疗效果越强。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/38-2.png"><h2>生命吐息<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[进场时]牺牲召唤师当前生命值的30%，使双方所有随从的生命成为80%。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/38-3.png"><h2>龙族血脉<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]提高我方飞行单位的击落抗性和防御力。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/38-4.png"><h2>龙族<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[友方飞行单位进场时]使其获得一个持续6s的无敌。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(39).png">
+		 				 				<h2>圣光骑士</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>圣光是他的信仰，曾经为王国守卫战中立下赫赫战功。身为光荣的骑士团领袖，肩负着教导王子的重任。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/39-1.png"><h2>处决宣判<span>默认大招</span></h2>
+		 				 					<p>[大招]召唤神圣之锤，给自己附加一个持续5秒的恢复效果，恢复效果结束后爆炸，造成范围伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/39-2.png"><h2>保护之手<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]入场时随机让一个本方随从获得圣盾，持续7.5s。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/39-3.png"><h2>力量祝福<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]死亡时提升我方召唤师攻击力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/39-4.png"><h2>忏悔<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[只要敌方召唤机械或人形随从]即降低该随从的攻速。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(40).png">
+		 				 				<h2>狮鹫</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：飞行</h3>
+		 				 				<p>盘旋在空中，时刻注视着地面上的敌人，它发动袭击的速度迅雷不及掩耳，令人防不慎防。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-1.png"><h2>啄眼<span>默认大招</span></h2>
+		 				 					<p>[大招]俯冲攻击地面目标，造成小范围伤害，被击中的目标暴击率、命中率降低，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-2.png"><h2>食肉<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]俯冲攻击1个地面单位，造成物理伤害,并吸血45%。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-3.png"><h2>野兽之力<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[我方英雄召唤野兽时]增加场上所有随从的10点能量，CD25秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-4.png"><h2>人型专家<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]对人类造成的伤害提升至1.5倍，并提升自身攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(41).png">
+		 				 				<h2>石峰巨人</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：恶魔</h3>
+		 				 				<p>身体就像山峰一样高耸入云，敌人的攻击很难对它造成致命的伤害，如果他真的崩塌，周围的敌人可要小心了。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/41-1.png"><h2>石拳震击<span>默认大招</span></h2>
+		 				 					<p>[大招]锤击大地，让所有地面目标后退造成伤害，并减少12点能量。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/41-2.png"><h2>全体掩护<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[光环]嘲讽，并为本方提供掩护，提升本方所有人的物防、魔防。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/41-3.png"><h2>吸收恶魔<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[偶尔]吸取敌方所有恶魔的生命。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/41-4.png"><h2>崩塌<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]坍塌，对周围造成物理伤害。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(42).png">
+		 				 				<h2>双头魔巫师</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：人形</h3>
+		 				 				<p>两个脑袋就有双倍的智慧，可以操控雷电和火焰两种元素。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-1.png"><h2>多重施法<span>默认大招</span></h2>
+		 				 					<p>[大招]朝血最少的角色施放一个大火球，有50%概率定身3.5秒，朝血最多的随从释放闪电，有30%概率混乱3.5秒，1级以上的目标异常状态的几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-2.png"><h2>霜甲术<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]强化自己的皮肤可以吸收伤害</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-3.png"><h2>法术强度<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]增加召唤师和随从的魔法攻击力</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-4.png"><h2>食人魔<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加生命上限</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 <!--
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(43).png">
+		 				 				<h2>水精灵</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：人类</h3>
+		 				 				<p> </p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/43-1.png"><h2><span>默认大招</span></h2>
+		 				 					<p>[</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/43-2.png"><h2><span>进阶到绿色解锁</span></h2>
+		 				 					<p></p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/43-3.png"><h2><span>进阶到蓝色解锁</span></h2>
+		 				 					<p></p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/43-4.png"><h2><span>进阶到紫色解锁</span></h2>
+		 				 					<p></p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				  -->
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(44).png">
+		 				 				<h2>缝合魔</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：恶魔</h3>
+		 				 				<p>他是来自地狱的怪兽，身体由各种尸体拼接缝合而成，手中的镰刀也来自地狱，全身上下散发着腐朽的味道，最好离他远点。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/44-1.png"><h2>缝合魔<span>默认大招</span></h2>
+		 				 					<p>[大招]对敌方地面正前方一列造成造成伤害，眩晕3秒，对1级以上单位几率降低，但每次伤害都会让目标额外获得15点能量。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/44-2.png"><h2>瘟疫<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]制造一团瘟疫，憎恶站在瘟疫中时会持续提高各项属性，瘟疫持续15秒，buff持续10秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/44-3.png"><h2>尸爆<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]对所有人造成毒属性伤害，并击退敌人。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/44-4.png"><h2>吞噬<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]对正在攻击的目标造成伤害并回复的生命值，若目标为人形，该伤害翻倍</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(45).png">
+		 				 				<h2>王牌火枪</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：人形</h3>
+		 				 				<p>他是一名杰出的猎人，无论面对多巨大的野兽，也能一枪撂倒。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-1.png"><h2>对空射击<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[大招]多次射击，若目标为飞行，造成2倍伤害，若目标为人形，伤害减半。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-2.png"><h2>野兽之灾<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]对敌人所有野兽造成伤害，并沉默3秒，对1级以上目标沉默几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-3.png"><h2>野兽畏惧<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]敌方野兽攻击力降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-4.png"><h2>野兽专家<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动][-]对野兽的伤害提升50%并提升自身攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(46).png">
+		 				 				<h2>巫医先知</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>巫毒蛊术虽是他的研究，但他更多的是将他用来医治患者。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/46-1.png"><h2>随身草药<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[大招]让全员每1秒回复一定的生命，若目标生命上限提升，则治疗效果提升1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/46-2.png"><h2>巫医药水<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]回复场上生命最少的我方角色的生命值。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/46-3.png"><h2>巫术光环<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]我方随从魔防提升</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/46-4.png"><h2>巫医学徒<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]让己方一名随从学会全员缓慢回复生命，每1秒回复一次。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(47).png">
+		 				 				<h2>妩媚兽人</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>对小动物很有爱心，但不是很擅长战斗。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/47-1.png"><h2>野兽的后盾<span>默认大招</span></h2>
+		 				 					<p>[大招]使所有野兽获得圣盾并提高其攻击力，持续5秒，若自身暴击得到提升，则回复所有野兽的生命值。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/47-2.png"><h2>野猪之友<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]召唤一只1级野猪。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/47-3.png"><h2>爱护动物<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[有任何野兽入场时]都会获得一个护盾。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/47-4.png"><h2>复活宠物<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[当有野兽死亡时]复活之，保有25%的血量，最多触发1次，CD15秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 	<div class="d_left">
+		 				 				<img src="../images/hero/detail(48).png">
+		 				 				<h2>炎魔之王</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：恶魔</h3>
+		 				 				<p>火焰魔王拥有操控烈火和熔岩的能力，一切生物在他的眼中都是渺小的虫子，他试图用火焰净化一切。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/48-1.png"><h2>熔岩箭 <span>默认大招</span></h2>
+		 				 					<p>[大招]一颗大火球，造成单体大伤害，若目标身上有无敌盾，造成持续伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/48-2.png"><h2>萨弗斯重击<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]砸下橙锤，造成少量AOE伤害</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/48-3.png"><h2>大螺丝之怒<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过30%的最大生命时]增加大量SP，5秒CD，降低敌方所有人火防。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/48-4.png"><h2>燃灭之手<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]将橙锤扔给目标法师，该法师获得萨弗拉斯重击。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(49).png">
+		 				 				<h2>羊头萨满</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：恶魔</h3>
+		 				 				<p>将灵魂献祭给极地之主，获得了操控冰霜的力量，无论生死都会让敌人感受到刺骨的寒冷。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/49-1.png"><h2>冰雨<span>默认大招</span></h2>
+		 				 					<p>[大招]在自己的前方凝结形成一场冰雨，持续3秒，造成范围内敌人冰属性伤害并降低攻速及移速，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/49-2.png"><h2>哀嚎冰环<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[死亡时]引爆一股冰环寒气，冻结近处的敌人4.5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/49-3.png"><h2>寒冰箭<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[偶尔]朝敌方后排敌人施放一枚寒冰箭，造成伤害，并有50%概率定身4秒，对21级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/49-4.png"><h2>冰枪<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]普攻有10%的几率冻结目标2.5秒，对41级以上的单位几率降低，并且若命中的目标处于冻结或眩晕状态则造成2倍伤害。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(54).png">
+		 				 				<h2>侏儒工程师</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>他是一个天才，擅长各种稀奇古怪的发明，还懂得修理任何机械。你的手机要贴膜么？</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/54-1.png"><h2>虚弱光线<span>默认大招</span></h2>
+		 				 					<p>[大招]向一个随机前排敌人发射虚弱光线，光线发射期间目标将被定身3.6秒，对1级以上的目标几率降低，被虚弱的随从攻击和防御下降,持续10秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/54-2.png"><h2>变身光线<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]发射奇异的光线，随机将一个后排随从变成青蛙，持续4.5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/54-3.png"><h2>机械强化<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当机械随从入场时]给其增加物理防御</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/54-4.png"><h2>机械背心<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]物理伤害减免。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(55).png">
+		 				 				<h2>烛光狗头人</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>头顶上的蜡烛，可以让他在漆黑的矿洞中发现任何东西，也能照亮队友提升团队的能力。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/55-1.png"><h2>矿井炸药<span>默认大招</span></h2>
+		 				 					<p>[大招]朝敌方前排扔出1个炸弹造成小范围火伤害，若对方魔防提升，则50%几率眩晕目标3秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/55-2.png"><h2>烛火<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[光环]增加本方所有人的魔法攻击力。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/55-3.png"><h2>支援<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过35%的最大生命时]给己方英雄技能次数+1。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/55-4.png"><h2>法力共鸣<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[当我方英雄召唤法师时]自己就增加30点SP。冷却12秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 </ul>
+	 				 </div>
+	 			</div>
+	 			<div class="hero_page">
+	 				<span class="all_up">上一页</span><span class="all_down">下一页</span>
+	 			</div>
+	 		</div>
+
+	 		<div class="all hide" name="召唤师">
+				<div class="zhao_allList">
+					<ul class="zhaoList">
+						<li><img src="../images/hero/zhao1.png" class="on"></li>
+						<li><img src="../images/hero/zhao2.png" ></li>
+						<li><img src="../images/hero/zhao3.png" ></li>
+					</ul>
+
+					<div>
+						<img src="../images/hero/z1.jpg" >  
+						<div class="z_intro">
+							<h2>珍娜 <span>法师</span></h2>
+							<p>出生与贵族家庭，美貌与智慧并存，从小就在皇家学院学习，对上古历史和秘术非常着迷。师从大炼金术士梅里，梦想是成为老师一样伟大的炼金家。在一次试验从古书中取得的炼金配方时发生意外，撕裂了时空从而坠落进卡尔大陆。</p>
+							<p>由于其内心对秘术的渴望，而与圣石的理智精神结合，成为一名操纵魔法的召唤师。</p>
+						</div>
+						<div class="ji_list">
+							<ul>
+								<li>
+									<img src="../images/jineng/53-1.png"> 
+									<h3>奥术飞弹 <span>英雄等级：1</span></h3>
+									<p>对随机的3个目标造成魔法伤害。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-2.png"> 
+									<h3>冰霜新星 <span>英雄等级：5</span></h3>
+									<p>使一个敌方随从变成羊,持续4秒，对1级以上的单位效果下降。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-3.png"> 
+									<h3>冰枪术 <span>英雄等级：10</span></h3>
+									<p>冰冻目标6.6秒，对1级以上单位几率降低，对若目标已被冰冻，则造成大量伤害。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-4.png"> 
+									<h3>变羊 <span>英雄等级：15</span></h3>
+									<p>使一个敌方随从变成羊,持续4秒，对1级以上的单位效果下降。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-5.png"> 
+									<h3>镜像术<span>英雄等级：20</span></h3>
+									<p>复制一个自己1级的残影，拥有很高的魔法抗性。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-6.png"> 
+									<h3>炎爆术 <span>英雄等级：25</span></h3>
+									<p>对敌方HP最多的随从造成大量火焰伤害。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-7.png"> 
+									<h3>唤醒 <span>英雄等级：30</span></h3>
+									<p>持续引导一段时间，回复一定的生命值并15秒内提升自己的魔攻。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-8.png"> 
+									<h3>龙息术 <span>英雄等级：35</span></h3>
+									<p>造成AOE伤害，范围8码，有40%的概率混乱4秒，对1级以上单位几率降低，目标怒气积累超过90，则100%混乱。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-9.png"> 
+									<h3>暴风雪 <span>英雄等级：40</span></h3>
+									<p>引导一场剧烈的暴风雪，杀伤途径上的所有敌人，并降低攻击速度和移动速度，持续10秒。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-10.png"> 
+									<h3>魔法增效 <span>英雄等级：45</span></h3>
+									<p>主动使所有团队成员受到的治疗效果提升，被动提升对人形生物的伤害。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/53-11.png"> 
+									<h3>烈焰风暴 <span>英雄等级：50</span></h3>
+									<p>对地面全体造成巨大的火焰伤害。</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="hide">
+						<img src="../images/hero/z2.jpg" >
+						<div class="z_intro">
+							<h2>艾因 <span>牧师</span></h2>
+							<p>本是某大公国的王子，因为被王兄排挤而对权力失去兴趣。从小便在修道院中修行，是一名虔诚的神之拥护者，他的梦想是组建一支自己的骑士团，保卫王国的人民和信仰。</p>
+							<p>在自己的骑士团组建完成那天，他向神做了一次虔诚的祈祷，谁知与一股遥远但强大的信仰精神产生共鸣，从而穿越裂隙坠入到卡尔大陆，成为一名信奉圣光的召唤师。</p>
+						</div>
+						<div class="ji_list">
+							<ul>
+								<li>
+									<img src="../images/jineng/51-1.png"> 
+									<h3>治疗术 <span>英雄等级：1</span></h3>
+									<p>治疗我方生命最少的一名随从生命。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-2.png"> 
+									<h3>沉默 <span>英雄等级：5</span></h3>
+									<p>沉默敌方怒气最高的角色10秒，若目标的SP高于60，则将其SP降低到60，对1级以上单位几率降低。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-3.png"> 
+									<h3>维纶的祝福 <span>英雄等级：10</span></h3>
+									<p>让一个随从的攻击和防御增加，并使召唤师具有法术强化光环，持续15秒。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-4.png"> 
+									<h3>圣盾术 <span>英雄等级：15</span></h3>
+									<p>令我方前排随从获得1个圣盾，5.5秒内免疫所有伤害。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-5.png"> 
+									<h3>圣神之火 <span>英雄等级：20</span></h3>
+									<p>对一个敌方随从造成伤害，并治疗本方一名随从生命。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-6.png"> 
+									<h3>群体驱散 <span>英雄等级：25</span></h3>
+									<p>驱散本方所有持续伤害效果，若成功驱散，则回复该单位生命值。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-7.png"> 
+									<h3>治疗之环 <span>英雄等级：30</span></h3>
+									<p>治疗本方所有角色生命。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-8.png"> 
+									<h3>暗言术·灭 <span>英雄等级：35</span></h3>
+									<p>对血量最低的随从造成伤害，若该随从的血量低于40%，对其造成800点伤害。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-9.png"> 
+									<h3>大复活 <span>英雄等级：40</span></h3>
+									<p>复活最近阵亡的队友，并具有20%的生命。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-10.png"> 
+									<h3>精神控制 <span>英雄等级：45</span></h3>
+									<p>让敌方HP最高的随从混乱7秒，对1级以上单位几率降低。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/51-11.png"> 
+									<h3>束缚亡灵 <span>英雄等级：50</span></h3>
+									<p>被动提高对恶魔的伤害50%，主动使用可以随机眩晕一个敌方恶魔6秒，对1级以上的单位几率降低。</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hide">
+						<img src="../images/hero/z3.jpg" >
+						<div class="z_intro">
+							<h2>雷克 <span>猎人</span></h2>
+							<p>幼时是一名孤儿被遗弃在森林之中，某兽人部落的酋长发现了他并收做养子。他拥有敏捷的头脑和身手，从小与森林为伴，熟悉各种野兽的习性和捕猎技巧。</p>
+							<p>在一次部落冲突之中，养父被敌人的毒箭所杀，他突然失去理智陷入狂怒，此时天空出现了奇怪的裂隙，当他恢复神智之后发现已身处一个陌生的卡尔大陆。由于其心中的狂怒与野性精神所结合，使其成为了支配野性的召唤师。</p>
+						</div>
+						<div class="ji_list">
+							<ul>
+								<li>
+									<img src="../images/jineng/52-1.png"> 
+									<h3>冷箭 <span>英雄等级：0</span></h3>
+									<p>朝对方后排随从射击，造成伤害。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-2.png"> 
+									<h3>猎人印记 <span>英雄等级：5</span></h3>
+									<p>标记一个敌方前排随从，令其防御降低72%，且你的所有随从会优先攻击这个目标，持续12秒。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-3.png"> 
+									<h3>弹幕射击 <span>英雄等级：10</span></h3>
+									<p>射出大量箭矢，造成伤害</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-4.png"> 
+									<h3>呼唤野兽 <span>英雄等级：15</span></h3>
+									<p>召唤一只1级的随机野兽。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-5.png"> 
+									<h3>多重射击 <span>英雄等级：20</span></h3>
+									<p>对敌方两个空中角色造成伤害，并击落6秒，对1级以上单位几率降低。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-6.png"> 
+									<h3>爆炸射击 <span>英雄等级：25</span></h3>
+									<p>对主目标造成伤害，眩晕5秒，对1级以上单位几率降低并对附近目标造成较低的AOE伤害。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-7.png"> 
+									<h3>狂野怒火 <span>英雄等级：30</span></h3>
+									<p>给一个野兽施加护盾，免疫8秒，且攻击速度和移动速度提升30%。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-8.png"> 
+									<h3>野兽知识 <span>英雄等级：35</span></h3>
+									<p>提高8%的攻速、提升攻击力，并对野兽的伤害提高50%。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-9.png"> 
+									<h3>急速射击 <span>英雄等级：40</span></h3>
+									<p>大幅提升攻速80%，持续30s。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-10.png"> 
+									<h3>全员冲锋 <span>英雄等级：45</span></h3>
+									<p>令我方所有随从获得30点能量。</p>
+								</li>
+								<li>
+									<img src="../images/jineng/52-11.png"> 
+									<h3>眼镜蛇射击 <span>英雄等级：50</span></h3>
+									<p>对召唤师造成伤害，并沉默10秒，对1级以上目标几率降低。</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+
+
+	 		 <!--
+	 			<div class="all_list ">
+
+	 				 <ul class="hero_img">
+	 				 	<li><img src="../images/hero/hr(51).png" ><div class="hide">详细资料</div><h4>艾因</h4></li>
+	 				 	<li><img src="../images/hero/hr(52).png" ><div class="hide">详细资料</div><h4>雷克</h4></li>
+	 				 	<li><img src="../images/hero/hr(53).png" ><div class="hide">详细资料</div><h4>珍娜</h4></li>
+	 				 </ul>
+	 				 <div class="hero_detail">
+	 				
+		 				 <ul >
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(51).png">
+		 				 				<h2>艾因</h2><h3>召唤师<br/>种族：人类</h3>
+		 				 				<p>来自著名修道院的召唤师，怀揣着梦想，擅长慰藉人们的心灵和治疗伤痛，更不可思议的是能够复活队友。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-1.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-2.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-3.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-4.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(52).png">
+		 				 				<h2>雷克</h2><h3>召唤师<br/>种族：人类</h3>
+		 				 				<p>来自著名修道院的召唤师，怀揣着梦想，擅长慰藉人们的心灵和治疗伤痛，更不可思议的是能够复活队友。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-1.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-2.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-3.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-4.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(53).png">
+		 				 				<h2>珍娜</h2><h3>召唤师<br/>种族：人类</h3>
+		 				 				<p>来自著名修道院的召唤师，怀揣着梦想，擅长慰藉人们的心灵和治疗伤痛，更不可思议的是能够复活队友。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-1.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-2.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-3.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-4.png"><h2>大招<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 </ul>
+		 			
+		 			</div>
+
+	 			</div>
+	 		-->
+	 	<!--
+	 			<div class="hero_page">
+	 				<span class="all_up">上一页</span><span class="all_down">下一页</span>
+	 			</div>
+	 	-->
+
+
+
+	 		</div>
+	 		<div class="all hide">
+	 			 
+ 				<ul class="suinav">
+ 					<li><img src="../images/hero_li1.png" class="on"></li>
+ 					<li><img src="../images/hero_li2.png"></li>
+ 					<li><img src="../images/hero_li3.png"></li>
+ 					<li><img src="../images/hero_li4.png"></li>
+ 					<li><img src="../images/hero_li5.png"></li>
+ 				</ul>
+	 			 
+	 			<div class="all_list sui">
+	 				 <ul class="hero_img">
+	 				 	<li><img src="../images/hero/hr(7).png" ><div class="hide">详细资料</div><h4>部落酋长</h4></li>
+	 				 	<li><img src="../images/hero/hr(9).png" ><div class="hide">详细资料</div><h4>豺狼人头领</h4></li>
+	 				 	<li><img src="../images/hero/hr(10).png" ><div class="hide">详细资料</div><h4>吵闹机器人</h4></li>
+	 				 	<li><img src="../images/hero/hr(12).png" ><div class="hide">详细资料</div><h4>刺壳龟</h4></li>
+	 				 	<li><img src="../images/hero/hr(19).png" ><div class="hide">详细资料</div><h4>钢鬓灰熊</h4></li>
+	 				 	<li><img src="../images/hero/hr(26).png" ><div class="hide">详细资料</div><h4>巨牙野猪</h4></li>
+	 				 	<li><img src="../images/hero/hr(27).png" ><div class="hide">详细资料</div><h4>科科兽</h4></li>
+	 				 	<li><img src="../images/hero/hr(28).png"><div class="hide">详细资料</div><h4>狂兽人</h4></li>
+	 				 	<li><img src="../images/hero/hr(30).png" ><div class="hide">详细资料</div><h4>獠牙狂暴者</h4></li>
+	 				 	<li><img src="../images/hero/hr(35).png" ><div class="hide">详细资料</div><h4>牛头酋长</h4></li>
+	 				 	<li><img src="../images/hero/hr(41).png" ><div class="hide">详细资料</div><h4>石峰巨人</h4></li>
+	 				 	<li><img src="../images/hero/hr(44).png" ><div class="hide">详细资料</div><h4>缝合魔</h4></li>
+	 				 </ul>
+	 				 <div class="hero_detail sui_detail">
+		 				 <ul >
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(7).png">
+		 				 				<h2>部落酋长</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：人形</h3>
+		 				 				<p>传说中兽人部落的酋长，因为永远奋战在战争的第一线而在部落中拥有至高的威信。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/7-1.png"><h2>旋风斩<span>默认大招</span></h2>
+		 				 					<p>[大招]像电扇一样朝敌方旋转，对敌人造成100%物理伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/7-2.png"><h2>嘲讽<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[被动]更容易吸引敌人的攻击，并且提升自己的物防和魔防。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/7-3.png"><h2>复仇之斧<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[受到伤害时]10%概率向敌方砍出一股气浪，对路径上的敌人造成物理伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/7-4.png"><h2>冲锋<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[入场时]即拥有70点能量。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(9).png">
+		 				 				<h2>豺狼人头领</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：人形</h3>
+		 				 				<p>聚集在野外的豺狼人都聚集在他的周围，经常袭击过往的旅行者，即使头领被赏金猎人除掉，新的继任者也会随后出现。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/9-1.png"><h2>召唤豺狼<span>默认大招</span></h2>
+		 				 					<p>[大招]召唤一只1级的豺狼人。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/9-2.png"><h2>救护<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[受到攻击时5%概率]会丢出自己的斧头反击，造成贯穿伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/9-3.png"><h2>救护<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]冲向一个随机目标疯狂的砍3斧头，削减其物防，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/9-4.png"><h2>救护<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]提升攻击力</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(10).png">
+		 				 				<h2>吵闹机器人</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：机械</h3>
+		 				 				<p>吵闹的性格，但具有坚硬的外壳可以抵挡强大的伤害。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/10-1.png"><h2>你~好~！<span>默认大招</span></h2>
+		 				 					<p>[大招]给自己附加一个护盾，吸收伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/10-2.png"><h2>你好！<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]挥砍前排范围物理伤害，并降低物防。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/10-3.png"><h2>你好！你好！<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]用铃铛震晕一个随机随从7秒，对21级以上目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/10-4.png"><h2>高音扬声器3000<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[光环]降低敌方所有单位的攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(12).png">
+		 				 				<h2>刺壳龟</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：野兽</h3>
+		 				 				<p>没有什么比龟壳更好的盾牌了，他能够抵抗各种物理伤害。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/12-1.png"><h2>甲壳护盾<span>默认大招</span></h2>
+		 				 					<p>[大招]缩进龟甲15秒,增加防御，并对攻击它的目标造成攻击者攻击力的伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/12-2.png"><h2>野兽警戒<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[我方战士入场时]为永久其增加物理防御</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/12-3.png"><h2>强效耐力<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]增加生命值上限</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/12-4.png"><h2>龟壳防御<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加防御力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(19).png">
+		 				 				<h2>钢鬃灰熊</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：野兽</h3>
+		 				 				<p>传说它曾是某位猎人的伙伴，被训练了精湛的生存能力和战斗技巧。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/19-1.png"><h2>舔舐伤口<span>默认大招</span></h2>
+		 				 					<p>[大招]舔舐伤口，回复生命，并在15秒内提升暴击率15%，若自身攻击力得到提升，治疗量提升到1.1倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/19-2.png"><h2>熊爪<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]挥动爪子拍人，造成无视防御的小范围伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/19-3.png"><h2>熊之伤<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过15%的最大生命时]提高攻击力，并附加10%吸血效果，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/19-4.png"><h2>嘲讽<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]更容易吸引敌人的攻击，并且自身提升物防、魔防。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(26).png">
+		 				 				<h2>巨牙野猪</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：野兽</h3>
+		 				 				<p>巨大的獠牙是它值得炫耀的武器，当他怒不可遏的朝你冲撞过来之时，你要么立即飞起来，要么等着飞起来。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/26-1.png"><h2>獠牙冲顶<span>默认大招</span></h2>
+		 				 					<p>[大招]冲顶敌人的地面单位，然后再冲顶回来，对沿途敌人物理伤害。最多冲顶5次敌人。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/26-2.png"><h2>嚎叫<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]降低敌人全体的物防和魔防,持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/26-3.png"><h2>野兽怒火<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当我方野兽死亡时]自身的攻击力提升，持续10秒</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/26-4.png"><h2>冲锋<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[入场时]即拥有70点能量。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(27).png">
+		 				 				<h2>科科兽</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：人形</h3>
+		 				 				<p>巨大的战场怪兽，突进在前方可以对敌人造成巨大的压迫感，在他身后的友方部队则会体会到可靠的保护。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/27-1.png"><h2>脆弱震击<span>默认大招</span></h2>
+		 				 					<p>[大招]对敌方血量最少的随从造成大量伤害，若其身上有无敌效果，则眩晕7.5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/27-2.png"><h2>顶撞<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]撕裂近处的对手，造成流血效果。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/27-3.png"><h2>铁山靠<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]将敌人的前排战士击退，并减速。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/27-4.png"><h2>开路先锋<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[光环]增加我方射手的攻击速度。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(28).png">
+		 				 				<h2>狂兽人</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：恶魔</h3>
+		 				 				<p>强壮的体魄无人能及，敌人的鲜血可自己的鲜血都能让他越战越勇。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/28-1.png"><h2>嗜血成性<span>默认大招</span></h2>
+		 				 					<p>[每当敌人死亡时]则大幅提升自己的攻击速度，并提高自身攻击力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/28-2.png"><h2>鲜血祭斧<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]对自身造成50%的伤害，提升攻击力、暴击率和攻速，持续30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/28-3.png"><h2>茹毛饮血<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]所有伤害都吸血12%</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/28-4.png"><h2>鲁莽<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]每次攻击提高3点攻击力，并额外获得5点怒气</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(30).png">
+		 				 				<h2>獠牙狂暴者</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：恶魔</h3>
+		 				 				<p>狂躁的恶魔对鲜血有特殊的喜爱，在尖锐的獠牙掀开伤口之后，他就贪婪的吮吸。如果不幸将其激怒，后果将更为可怕。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/30-1.png"><h2>饥渴恶魔<span>默认大招</span></h2>
+		 				 					<p>[大招]吸取最近的敌人的血，并损伤其能量。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/30-2.png"><h2>激怒<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过15%的最大生命时]攻击力提升。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/30-3.png"><h2>恶魔战友<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当有任何恶魔死亡时]攻击力提升，持续30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/30-4.png"><h2>硬化皮肤<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]物理防御提升</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(35).png">
+		 				 				<h2>牛头酋长</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：人形</h3>
+		 				 				<p>大地母亲最忠实的仆人，领导着自己的族人在贫瘠的土地上艰苦求生，艰苦的环境培给了他强健的体魄和坚定的意志。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/35-1.png"><h2>战争践踏<span>默认大招</span></h2>
+		 				 					<p>[大招]猛踩地面，晕眩敌方所有随从1.5秒，对1级以上随从几率降低，造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/35-2.png"><h2>雷霆崖之矛<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[敌方任意人被施加护盾时]向其丢出长矛，戳破他的盾，并击晕所有敌方单位2秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/35-3.png"><h2>领袖光辉<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]所有战士获得技能：当受到35%以上生命值伤害释放战争践踏，眩晕所有对手1.4秒，对1级以上单位几率降低，并造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/35-4.png"><h2>继承遗志<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]召唤40级的牛头继承者。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(41).png">
+		 				 				<h2>石峰巨人</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：恶魔</h3>
+		 				 				<p>身体就像山峰一样高耸入云，敌人的攻击很难对它造成致命的伤害，如果他真的崩塌，周围的敌人可要小心了。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/41-1.png"><h2>石拳震击<span>默认大招</span></h2>
+		 				 					<p>[大招]锤击大地，让所有地面目标后退造成伤害，并减少12点能量。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/41-2.png"><h2>全体掩护<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[光环]嘲讽，并为本方提供掩护，提升本方所有人的物防、魔防。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/41-3.png"><h2>吸收恶魔<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[偶尔]吸取敌方所有恶魔的生命。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/41-4.png"><h2>崩塌<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]坍塌，对周围造成物理伤害。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+							<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(44).png">
+		 				 				<h2>缝合魔</h2><h3><img src="../images/jineng/z_zhanshi.png">战士<br/>种族：恶魔</h3>
+		 				 				<p>他是来自地狱的怪兽，身体由各种尸体拼接缝合而成，手中的镰刀也来自地狱，全身上下散发着腐朽的味道，最好离他远点。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/44-1.png"><h2>缝合魔<span>默认大招</span></h2>
+		 				 					<p>[大招]对敌方地面正前方一列造成造成伤害，眩晕3秒，对1级以上单位几率降低，但每次伤害都会让目标额外获得15点能量。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/44-2.png"><h2>瘟疫<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]制造一团瘟疫，憎恶站在瘟疫中时会持续提高各项属性，瘟疫持续15秒，buff持续10秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/44-3.png"><h2>尸爆<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]对所有人造成毒属性伤害，并击退敌人。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/44-4.png"><h2>吞噬<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]对正在攻击的目标造成伤害并回复的生命值，若目标为人形，该伤害翻倍</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 </ul>
+		 			</div>
+	 			</div>
+	 			
+	 			<div class="all_list sui hide">
+	 				 <ul class="hero_img">
+	 				 	<li><img src="../images/hero/hr(2).png"><div class="hide">详细资料</div><h4>潜行专家</h4></li>
+	 				 	<li><img src="../images/hero/hr(8).png"><div class="hide">详细资料</div><h4>草原狮</h4></li>
+	 				 	<li><img src="../images/hero/hr(11).png"><div class="hide">详细资料</div><h4>持盾卫士</h4></li>
+	 				 	<li><img src="../images/hero/hr(14).png"><div class="hide">详细资料</div><h4>大德鲁伊</h4></li>
+	 				 	<li><img src="../images/hero/hr(17).png"><div class="hide">详细资料</div><h4>恶魔猎手</h4></li>
+	 				 	<li><img src="../images/hero/hr(20).png"><div class="hide">详细资料</div><h4>古树保卫者</h4></li>
+	 				 	<li><img src="../images/hero/hr(23).png"><div class="hide">详细资料</div><h4>金色指挥官</h4></li>
+	 				 	<li><img src="../images/hero/hr(32).png"><div class="hide">详细资料</div><h4>麦田守望者</h4></li>
+	 				 	<li><img src="../images/hero/hr(36).png"><div class="hide">详细资料</div><h4>破法剑士</h4></li>
+	 				 	<li><img src="../images/hero/hr(37).png"><div class="hide">详细资料</div><h4>丛林豹</h4></li>
+	 				 	<li><img src="../images/hero/hr(39).png"><div class="hide">详细资料</div><h4>圣光骑士</h4></li>
+	 				 	<li><img src="../images/hero/hr(47).png"><div class="hide">详细资料</div><h4>妩媚兽人</h4></li>
+	 				 </ul>
+	 				  <div class="hero_detail">
+		 				 <ul>
+		 				 	
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(2).png">
+		 				 				<h2>潜行专家</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>她的身世一直是谜，只知道曾效忠于某位高贵的国王，悄无声息的行动总能够给敌人致命一击。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/2-1.png"><h2>背叛<span>默认大招</span></h2>
+		 				 					<p>[大招]使一个敌方随从攻击力大幅提升，并混乱。持续5s，对1级以上目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/2-2.png"><h2>潜行帷幕<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]让所我方所有随从提升闪避率20%，持续11s。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/2-3.png"><h2>致命药膏<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[我方召唤师每释放一次技能时]就会给自己的武器附加药膏,攻击力提升和暴击,持续30秒,CD20秒</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/2-4.png"><h2>备战就绪<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[每当受到伤害时]增加1点物防，1点魔防持续30秒</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(8).png">
+		 				 				<h2>草原狮</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：野兽</h3>
+		 				 				<p>一声怒吼可以令所有前排胆寒畏缩，可以很好的压制敌人阵线。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/8-1.png"><h2>雄狮咆哮<span>默认大招</span></h2>
+		 				 					<p>[大招]击退敌方战士和骑士，并75%概率使对方法师和射手混乱3秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/8-2.png"><h2>狮之优雅<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]主动增加己方野兽攻击力和防御力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/8-3.png"><h2>鲜肉的诱惑<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]召唤一只20级的小狮子。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/8-4.png"><h2>百兽之王<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]受到野兽的伤害降低。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(11).png">
+		 				 				<h2>持盾卫士</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>过的是刀头上舔血的生活，动作虽不灵活但有一面受过祖先祝福的盾牌，战斗起来也挺安心。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/11-1.png"><h2>毒斧<span>默认大招</span></h2>
+		 				 					<p>[大招]扔出一把抛物线的斧子，贯穿天空和地面上随从，造成毒伤并中毒，若自身魔防提升，则中毒伤害提升到1.5倍</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/11-2.png"><h2>部落盾墙<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]架起盾牌提升己方所有的物防和魔防，持续30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/11-3.png"><h2>灵魂增强<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[任意人死亡时]短时间提升自己的物理防御。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/11-4.png"><h2>强健<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加生命上限。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(14).png">
+		 				 				<h2>大德鲁伊</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>大德鲁伊是一名掌控大自然的智者，但也会用自己的利爪撕碎任何入侵者。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/14-1.png"><h2>横扫<span>默认大招</span></h2>
+		 				 					<p>[大招]挥动左右钢爪，对敌方造成无视防御的伤害，且造成持续流血，若目标身上有持续治疗效果，直接伤害提升为1.5倍</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/14-2.png"><h2>狂暴回复<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[当受到伤害时]有几率在6秒内恢复12%的生命值，但会消耗20点能量，该技能每8秒触发一次</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/14-3.png"><h2>生命之树<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]本方所有随从生命上限增加。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/14-4.png"><h2>剧毒之种<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]给敌方一个随从种植一颗剧毒之种，在其死亡时发生爆炸，造成范围毒伤害。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(17).png">
+		 				 				<h2>恶魔猎手</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：恶魔</h3>
+		 				 				<p>他在地上时是一名骁勇的战士，当他变身之后又可以翱翔在天空，变化莫测。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/17-1.png"><h2>恶魔变身<span>默认大招</span></h2>
+		 				 					<p>[大招]变身成为一个1级的恶魔。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/17-2.png"><h2>献祭光环<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[被动]周期性对周围造成伤害</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/17-3.png"><h2>不灭决心<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过10%的最大生命时]会提高防御，持续5秒，该效果有20秒的冷却时间。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/17-4.png"><h2>闪避<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]闪避提高60%，持续3秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(20).png">
+		 				 				<h2>古树保卫者</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：恶魔</h3>
+		 				 				<p>虽然看起来像一棵树，但他却可以随意的走动，经常有迷路的旅人跟随他的灯光找到回家的路。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/20-1.png"><h2>群体缠绕<span>默认大招</span></h2>
+		 				 					<p>[大招]缠绕住所有敌方随从造成晕眩，对1级以上目标几率降低，并吸血5次，但会为对手每次增加15点能量。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/20-2.png"><h2>树枝缠绕<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]攻击者有10%的几率被缠绕，降低30%的攻击速度8秒</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/20-3.png"><h2>树荫庇护<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]增加生命恢复速度</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/20-4.png"><h2>嘲讽<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]更容易吸引敌人的攻击，并且自身提升物防、魔防。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(23).png">
+		 				 				<h2>金色指挥官</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>他是金色骑士团的成员，坚决的贯彻团长发布的命令。在圣光的照耀下拥有坚不可摧的力量。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/23-1.png"><h2>远程支持<span>默认大招</span></h2>
+		 				 					<p>[大招]提升己方弓手和法师的攻击力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/23-2.png"><h2>盾击<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]用盾击退最近的目标，造成物理伤害，并50%混乱3秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/23-3.png"><h2>雷光护盾<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]给自己附加一个护盾吸收伤害，护盾爆炸时击退近处的敌人，并造成雷属性伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/23-4.png"><h2>谦逊<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]使一个随机的敌方随从攻击和魔攻降低，持续15秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(32).png">
+		 				 				<h2>麦田守望者</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：机械</h3>
+		 				 				<p>本身就是用破碎的零件拼装而成，放在田里可以吓走来偷食的野兽，但自动给他安装了自动马达之后，也可以帮着收割庄稼。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/32-1.png"><h2>快速收割<span>默认大招</span></h2>
+		 				 					<p>[大招]造成附近敌人持续物理伤害，并为我方人形随从恢复生命，若自身拥有护盾效果，伤害提升，若目标身上拥有护盾，伤害提升</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/32-2.png"><h2>复制零件<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[死亡时]用自己的零件拼凑出一个自己1级小型复制品。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/32-3.png"><h2>守望者 <span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当对方召唤野兽时]释放一个AOE对全体野兽造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/32-4.png"><h2>野兽克星<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]对野兽造成的伤害提升至1.5倍，并提升自身攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(36).png">
+		 				 				<h2>破法剑士</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>他是法师的克星，能够利用法师心中对魔法的狂热而引爆他们。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/36-1.png"><h2>破法<span>默认大招</span></h2>
+		 				 					<p>[大招]基于所有敌方随从当前SP，燃烧其SP的38%，并造成生命伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/36-2.png"><h2>静默诅咒<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]沉默SP最多的一个随从 持续6秒，若目标已被沉默，则眩晕2.5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/36-3.png"><h2>法师宿敌<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]对所有法师造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/36-4.png"><h2>法术洞悉<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]受到法师的伤害降低。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(37).png">
+		 				 				<h2>丛林豹</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：野兽</h3>
+		 				 				<p>动作敏捷的杀手，最能发现猎物的弱点，从而一口咬住咽喉，招招致命从不失手。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/37-1.png"><h2>致命之吼<span>默认大招</span></h2>
+		 				 					<p>[大招]增加我方所有随从的暴击几率，持续10秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/37-2.png"><h2>躲避之吼<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]增加自身闪避，持续20秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/37-3.png"><h2>致命挣扎<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过20%的最大生命时]，提升自己速度和暴击，持续15秒，并撕咬最近的敌人造成伤害，有50%概率沉默5秒，对21级以上的单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/37-4.png"><h2>人类克星<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]对人类造成的伤害提升至1.5倍，并提升自身攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(39).png">
+		 				 				<h2>圣光骑士</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>圣光是他的信仰，曾经为王国守卫战中立下赫赫战功。身为光荣的骑士团领袖，肩负着教导王子的重任。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/39-1.png"><h2>处决宣判<span>默认大招</span></h2>
+		 				 					<p>[大招]召唤神圣之锤，给自己附加一个持续5秒的恢复效果，恢复效果结束后爆炸，造成范围伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/39-2.png"><h2>保护之手<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]入场时随机让一个本方随从获得圣盾，持续7.5s。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/39-3.png"><h2>力量祝福<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]死亡时提升我方召唤师攻击力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/39-4.png"><h2>忏悔<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[只要敌方召唤机械或人形随从]即降低该随从的攻速。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+							<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(47).png">
+		 				 				<h2>妩媚兽人</h2><h3><img src="../images/jineng/z_qishi.png">骑士<br/>种族：人形</h3>
+		 				 				<p>对小动物很有爱心，但不是很擅长战斗。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/47-1.png"><h2>野兽的后盾<span>默认大招</span></h2>
+		 				 					<p>[大招]使所有野兽获得圣盾并提高其攻击力，持续5秒，若自身暴击得到提升，则回复所有野兽的生命值。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/47-2.png"><h2>野猪之友<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]召唤一只1级野猪。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/47-3.png"><h2>爱护动物<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[有任何野兽入场时]都会获得一个护盾。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/47-4.png"><h2>复活宠物<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[当有野兽死亡时]复活之，保有25%的血量，最多触发1次，CD15秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 </ul>
+		 			</div>
+
+	 			</div>
+	 			<div class="all_list sui hide">
+	 				 <ul class="hero_img">
+	 				 	<li><img src="../images/hero/hr(5).png"><div class="hide">详细资料</div><h4>毒泥怪</h4></li>
+	 				 	<li><img src="../images/hero/hr(21).png"><div class="hide">详细资料</div><h4>火药搬运工</h4></li>
+	 				 	<li><img src="../images/hero/hr(25).png"><div class="hide">详细资料</div><h4>酒仙</h4></li>
+	 				 	<li><img src="../images/hero/hr(31).png"><div class="hide">详细资料</div><h4>烈火精灵</h4></li>
+	 				 	<li><img src="../images/hero/hr(34).png"><div class="hide">详细资料</div><h4>魔晶龙</h4></li>
+	 				 	<li><img src="../images/hero/hr(42).png"><div class="hide">详细资料</div><h4>双头魔巫师</h4></li>
+	 				 	<li><img src="../images/hero/hr(48).png"><div class="hide">详细资料</div><h4>炎魔之王</h4></li>
+	 				 	<li><img src="../images/hero/hr(49).png"><div class="hide">详细资料</div><h4>羊头萨满</h4></li>
+	 				 	<li><img src="../images/hero/hr(55).png"><div class="hide">详细资料</div><h4>烛光狗头人</h4></li>
+	 				 </ul>
+	 				  <div class="hero_detail">
+		 				 <ul >
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(5).png">
+		 				 				<h2>毒泥怪</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：恶魔</h3>
+		 				 				<p>黏糊糊的身体，即使在中箭之后也会快速的愈合，如果不幸被它体内的液体喷中，不仅皮肤会被溃烂，连手中的刀剑都会腐蚀。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/5-1.png"><h2>酸雨<span>默认大招</span></h2>
+		 				 					<p>[大招]对敌方全体造成3次毒属性伤害并附加中毒效果，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/5-2.png"><h2>腐蚀武器<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]随机减少敌方召唤师技能1次，并降低其攻击力，持续30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/5-3.png"><h2>恶魔涂层<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]降低所有友方受到的毒属性伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/5-4.png"><h2>箭矢缓冲<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]受到射手的伤害降低。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(21).png">
+		 				 				<h2>火药搬运工</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：人形</h3>
+		 				 				<p>经常搞不清方向，把手中炸弹随意乱扔。背着的可不是酒桶，而是满满的炸药，说必定哪天摔了一跤就会~嘣！</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/21-1.png"><h2>死亡炸药<span>默认大招</span></h2>
+		 				 					<p>[大招]冲向敌人后排，然后引爆自己的炸药桶，对所有人造成火焰伤害，若目标魔防下降，则有75%几率眩晕其4秒，对1级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/21-2.png"><h2>炸弹来啦！<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]不分敌我的随机扔3颗炸弹。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/21-3.png"><h2>易燃易爆<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]受到攻击时，有可能自爆，对场上所有人造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/21-4.png"><h2>火药精通<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加火属性抗性。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(25).png">
+		 				 				<h2>酒仙</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：人形</h3>
+		 				 				<p>来自热情好客的熊猫大陆，天生的好酒量。即使在战场上也会时不时的举起酒壶喝上几口，他说这样可以令他的步伐很稳健。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/25-1.png"><h2>回来喝酒<span>默认大招</span></h2>
+		 				 					<p>[大招]让我方血量最少的随从回到牌堆，恢复所有生命并且重置其所有技能的剩余次数但会清空能量且有60秒的冷却时间。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/25-2.png"><h2>酒雾<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]喷吐酒雾，降低对方前排的魔抗10s并造成火属性伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/25-3.png"><h2>有朋自远方来<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[每当我方召唤人形随从时]则饮下烈酒攻击变高，并同时回复少量HP值</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/25-4.png"><h2>醉拳<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加闪避以及暴击。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(31).png">
+		 				 				<h2>烈火精灵</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：人形</h3>
+		 				 				<p>在地狱烈焰中诞生的小鬼，在与其签订契约之后可以为人所驱使，但代价也是可怕的。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/31-1.png"><h2>烈焰火柱<span>默认大招</span></h2>
+		 				 					<p>[大招]在敌方前排筑起一道火墙，只要经过其中的随从都会受到火焰伤害，防御越高，受到的伤害越高，对1级以上的单位几率下降。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/31-2.png"><h2>灼疗主人<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[进场时]缓慢恢复召唤师血量并提升攻击力，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/31-3.png"><h2>噬体之种<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[我方召唤师释放技能时]燃烧对方一个随从，降低其魔防，持续13秒，CD30秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/31-4.png"><h2>血红契约<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[我方有随从入场时]给该友方随从增加生命上限。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(34).png">
+		 				 				<h2>魔晶龙</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：飞行</h3>
+		 				 				<p>体力聚集着大量的魔法能量，从而让外来的魔法攻击很难对其造成伤害。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/34-1.png"><h2>双重吐息<span>默认大招</span></h2>
+		 				 					<p>[大招][-]使用冰球75%几率单体定身3秒，对级以上单位效果下降，然后喷吐火焰造成范围伤害，若目标被眩晕或混乱，造成持续伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/34-2.png"><h2>灵龙护盾<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[进场时][-]离自己最远的一个随从，获得法术伤害减免，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/34-3.png"><h2>法力磷粉<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时][-]散落出一片闪亮的磷粉持续7.7秒，触碰到的角色可以持续获得法力，间隔1.3秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/34-4.png"><h2>法术折射<span>进阶到紫色解锁</span></h2>
+		 				 					<p>提升魔防</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(42).png">
+		 				 				<h2>双头魔巫师</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：人形</h3>
+		 				 				<p>两个脑袋就有双倍的智慧，可以操控雷电和火焰两种元素。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-1.png"><h2>多重施法<span>默认大招</span></h2>
+		 				 					<p>[大招]朝血最少的角色施放一个大火球，有50%概率定身3.5秒，朝血最多的随从释放闪电，有30%概率混乱3.5秒，1级以上的目标异常状态的几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-2.png"><h2>霜甲术<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]强化自己的皮肤可以吸收伤害</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-3.png"><h2>法术强度<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]增加召唤师和随从的魔法攻击力</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/42-4.png"><h2>食人魔<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加生命上限</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 	<div class="d_left">
+		 				 				<img src="../images/hero/detail(48).png">
+		 				 				<h2>炎魔之王</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：恶魔</h3>
+		 				 				<p>火焰魔王拥有操控烈火和熔岩的能力，一切生物在他的眼中都是渺小的虫子，他试图用火焰净化一切。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/48-1.png"><h2>熔岩箭 <span>默认大招</span></h2>
+		 				 					<p>[大招]一颗大火球，造成单体大伤害，若目标身上有无敌盾，造成持续伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/48-2.png"><h2>萨弗斯重击<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]砸下橙锤，造成少量AOE伤害</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/48-3.png"><h2>大螺丝之怒<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过30%的最大生命时]增加大量SP，5秒CD，降低敌方所有人火防。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/48-4.png"><h2>燃灭之手<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]将橙锤扔给目标法师，该法师获得萨弗拉斯重击。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(49).png">
+		 				 				<h2>羊头萨满</h2><h3><img src="../images/jineng/z_fashi.png">法师<br/>种族：恶魔</h3>
+		 				 				<p>将灵魂献祭给极地之主，获得了操控冰霜的力量，无论生死都会让敌人感受到刺骨的寒冷。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/49-1.png"><h2>冰雨<span>默认大招</span></h2>
+		 				 					<p>[大招]在自己的前方凝结形成一场冰雨，持续3秒，造成范围内敌人冰属性伤害并降低攻速及移速，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/49-2.png"><h2>哀嚎冰环<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[死亡时]引爆一股冰环寒气，冻结近处的敌人4.5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/49-3.png"><h2>寒冰箭<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[偶尔]朝敌方后排敌人施放一枚寒冰箭，造成伤害，并有50%概率定身4秒，对21级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/49-4.png"><h2>冰枪<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]普攻有10%的几率冻结目标2.5秒，对41级以上的单位几率降低，并且若命中的目标处于冻结或眩晕状态则造成2倍伤害。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(55).png">
+		 				 				<h2>烛光狗头人</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>头顶上的蜡烛，可以让他在漆黑的矿洞中发现任何东西，也能照亮队友提升团队的能力。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/55-1.png"><h2>矿井炸药<span>默认大招</span></h2>
+		 				 					<p>[大招]朝敌方前排扔出1个炸弹造成小范围火伤害，若对方魔防提升，则50%几率眩晕目标3秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/55-2.png"><h2>烛火<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[光环]增加本方所有人的魔法攻击力。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/55-3.png"><h2>支援<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过35%的最大生命时]给己方英雄技能次数+1。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/55-4.png"><h2>法力共鸣<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[当我方英雄召唤法师时]自己就增加30点SP。冷却12秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 </ul>
+		 			</div>
+	 			</div>
+	 			<div class="all_list sui hide">
+	 				 <ul class="hero_img">
+	 				 	<li><img src="../images/hero/hr(4).png" ><div class="hide">详细资料</div><h4>宝石男巫</h4></li>
+	 				 	<li><img src="../images/hero/hr(6).png" ><div class="hide">详细资料</div><h4>冰霜鱼人</h4></li>
+	 				 	<li><img src="../images/hero/hr(13).png" ><div class="hide">详细资料</div><h4>丛林守卫</h4></li>
+	 				 	<li><img src="../images/hero/hr(16).png" ><div class="hide">详细资料</div><h4>地精商人</h4></li>
+	 				 	<li><img src="../images/hero/hr(22).png" ><div class="hide">详细资料</div><h4>机械传送者</h4></li>
+	 				 	<li><img src="../images/hero/hr(29).png" ><div class="hide">详细资料</div><h4>雷神索尔</h4></li>
+	 				 	<li><img src="../images/hero/hr(33).png" ><div class="hide">详细资料</div><h4>魅魔</h4></li>
+	 				 	<li><img src="../images/hero/hr(38).png"><div class="hide">详细资料</div><h4>生命红龙</h4></li>
+	 				 	<li><img src="../images/hero/hr(46).png" ><div class="hide">详细资料</div><h4>巫医先知</h4></li>
+	 				 	<li><img src="../images/hero/hr(24).png" ><div class="hide">详细资料</div><h4>酒馆老板</h4></li>
+	 				 </ul>
+	 				  <div class="hero_detail">
+		 				 <ul >
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(4).png">
+		 				 				<h2>宝石男巫</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>来自著名修道院的牧师，平日会将神圣能量储存在杖首的宝石之中，在有人需要救治时再将能量释放出来。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/4-1.png"><h2>救护<span>默认大招</span></h2>
+		 				 					<p>[大招]回复场上生命最少的我方角色HP</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/4-2.png"><h2>心灵救助<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[当有角色获得治疗时]增加能量最少的随从SP30，冷却20秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/4-3.png"><h2>驱散<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]解除全员的混乱和停止，并使全员混乱和停止抗性提高，持续20秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/4-4.png"><h2>恶魔专家<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]对恶魔造成的伤害增加50%，并提升攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	 <li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(6).png">
+		 				 				<h2>冰霜鱼人</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：恶魔</h3>
+		 				 				<p>操纵潮汐之力引导自己的族人。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/6-1.png"><h2>潮汐赐福<span>默认大招</span></h2>
+		 				 					<p>[大招]为本方所有战士和骑士回复生命，并提升魔防，持续20秒，若目标为恶魔，治疗效果提升为1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/6-2.png"><h2>寒气喷吐<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[进场时]令对方所有机械随从生锈，造成攻击力下降、攻击速度下降，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/6-3.png"><h2>寒光<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]提升我方牧师和法师的物理防御。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/6-4.png"><h2>鱼人智慧<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加魔防。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(13).png">
+		 				 				<h2>丛林守卫</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：恶魔</h3>
+		 				 				<p>发动丛林的再生之力，可以回复本方全体生命。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/13-1.png"><h2>野性成长<span>默认大招</span></h2>
+		 				 					<p>[大招]治疗自己及周围的友方,同时增加物防魔防15秒，若目标身上有持续治疗效果，治疗量提升到1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/13-2.png"><h2>月火术<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[被动]当敌方英雄召唤随从时，对敌方所有随从造成电伤害，CD3秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/13-3.png"><h2>禁魔<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[入场时]沉默敌方怒气值最高的随从9秒，若目标的SP高于60，则将其SP降低到60，对21级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/13-4.png"><h2>梦境之力<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加魔法攻击力</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(16).png">
+		 				 				<h2>地精商人</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>别看他的背包不大，但在他这里可以买到世上所有的东西。有钱就能解决一切问题。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/16-1.png"><h2>贿赂<span>默认大招</span></h2>
+		 				 					<p>[大招]使一个随机敌人混乱4.6秒，该随从在攻击1次后会混乱另一目标，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/16-2.png"><h2>金钱万能<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]清除1米范围内敌人所有的主动buff效果。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/16-3.png"><h2>有钱能使鬼推磨<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当一个友方死亡时]复活他，但只有10%生命值；仅1次。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/16-4.png"><h2>移动银行<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]恢复10~70点能量</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(22).png">
+		 				 				<h2>机械传送者</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：机械</h3>
+		 				 				<p>不要被他巨大的铁拳头所迷惑，那只是为了在传送功能启动时让机身更为稳定的配重。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/22-1.png"><h2>毁灭激光<span>默认大招</span></h2>
+		 				 					<p>[大招]伤害敌方，并致盲敌方4.5秒，若目标的攻击力降低，则沉默5秒，对1级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/22-2.png"><h2>能源补给<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[我方其他机械入场时]让其获得30点能量,CD13秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/22-3.png"><h2>机械跃迁<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[我方其他机械死亡时]重新传送一个该机械随从，持有20%的血量。只可触发1次</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/22-4.png"><h2>机械强固<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]提高法术伤害。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(29).png">
+		 				 				<h2>雷神索尔</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>体内积聚雷电的力量，可以引导雷电轰击敌人，如果雷电之力附着在队友身上，那真的是会产生迅雷不及掩耳盗铃响叮当的速度。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/29-1.png"><h2>闪电风暴<span>默认大招</span></h2>
+		 				 					<p>[大招]对所有地方随从造成0.7到1.3倍的闪电伤害。有概率10%定身6秒，若目标已被定身，则几率变为100%，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/29-2.png"><h2>大地震击<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]对随机一个随从造成雷电伤害，并沉默5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/29-3.png"><h2>风怒武器<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[偶尔]让一个随从的攻击速度增加70%，持续5.5秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/29-4.png"><h2>治疗之泉图腾<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[偶尔]召唤一个会不断治疗的图腾，图腾会在治疗5次或受到3次伤害后消失</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(33).png">
+		 				 				<h2>魅魔</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：飞行</h3>
+		 				 				<p>深知男人的弱点，没有一个成年男人可以逃脱她那魅惑的眼神，在你神魂颠倒之时，她已经取了你的性命。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/33-1.png"><h2>魅惑人群<span>默认大招</span></h2>
+		 				 					<p>[大招]混乱对方所有人型随从5.1秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/33-2.png"><h2>魅惑单体<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]50%混乱对方能量最多的随从3.4秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/33-3.png"><h2>轻盈<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]被动增加闪避率5%。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/33-4.png"><h2>美貌<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]受到人类的伤害降低。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(38).png">
+		 				 				<h2>生命红龙</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：飞行</h3>
+		 				 				<p>体力蕴含巨大的生命活力，可以分享给己方的随从。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/38-1.png"><h2>红龙之血<span>默认大招</span></h2>
+		 				 					<p>[大招]牺牲自身当前生命值的50%，使所有随从恢复生命值，目标损失血量越多，治疗效果越强。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/38-2.png"><h2>生命吐息<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[进场时]牺牲召唤师当前生命值的30%，使双方所有随从的生命成为80%。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/38-3.png"><h2>龙族血脉<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[被动]提高我方飞行单位的击落抗性和防御力。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/38-4.png"><h2>龙族<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[友方飞行单位进场时]使其获得一个持续6s的无敌。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(46).png">
+		 				 				<h2>巫医先知</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人类</h3>
+		 				 				<p>巫毒蛊术虽是他的研究，但他更多的是将他用来医治患者。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/46-1.png"><h2>随身草药<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[大招]让全员每1秒回复一定的生命，若目标生命上限提升，则治疗效果提升1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/46-2.png"><h2>巫医药水<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]回复场上生命最少的我方角色的生命值。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/46-3.png"><h2>巫术光环<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]我方随从魔防提升</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/46-4.png"><h2>巫医学徒<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]让己方一名随从学会全员缓慢回复生命，每1秒回复一次。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(24).png">
+		 				 				<h2>酒馆老板</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>没有比酒馆老板更好客的人了，只是有时会在酒里掺水。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/24-1.png"><h2>免费午餐<span>默认大招</span></h2>
+		 				 					<p>[大招]令我方生命最少角色回复生命、怒气，并10秒内提升攻击力，如果目标的生命值低于35%，治疗效果提升50%。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/24-2.png"><h2>请客<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]入场时请所有人喝啤酒，提升所有随从的攻击和怒气。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/24-3.png"><h2>假酒<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]向敌人随机一个随从扔出一杯假酒，喝下后攻击速度、防御力大幅下降，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/24-4.png"><h2>千杯不倒<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]眩晕，混乱抗性提升</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 </ul>
+		 			</div>
+	 			</div>
+	 			<div class="all_list sui hide">
+	 				 <ul class="hero_img">
+	 				 	<li><img src="../images/hero/hr(1).png" ><div class="hide">详细资料</div><h4>艾露侍从</h4></li>
+	 				 	<li><img src="../images/hero/hr(3).png" ><div class="hide">详细资料</div><h4>暗夜射手</h4></li>
+	 				 	<li><img src="../images/hero/hr(15).png" ><div class="hide">详细资料</div><h4>地精切割机</h4></li>
+	 				 	<li><img src="../images/hero/hr(18).png" ><div class="hide">详细资料</div><h4>飞刀表演者</h4></li>
+	 				 	<li><img src="../images/hero/hr(40).png" ><div class="hide">详细资料</div><h4>狮鹫</h4></li>
+	 				 	<li><img src="../images/hero/hr(45).png" ><div class="hide">详细资料</div><h4>王牌火枪</h4></li>
+	 				 	<li><img src="../images/hero/hr(54).png" ><div class="hide">详细资料</div><h4>侏儒工程师</h4></li>
+	 				 </ul>
+	 				  <div class="hero_detail">
+		 				 <ul >
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(1).png">
+
+		 				 				<h2>艾路侍从</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：飞行</h3>
+		 				 				<p>将肉体与灵魂都敬献给艾路，永世侍奉艾路换来了天堂的制式长弓和能操控旋风和雷霆翅膀。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/1-1.png"><h2>圣洁旋风<span>默认大招</span></h2>
+		 				 					<p>[大招]吹出一条直线行走的风，造成伤害并击退，25%概率令目标混乱，对1级以上的目标几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/1-2.png"><h2>天使雷霆<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[光环]增加本方所有人的雷属性伤害，额外提高物攻。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/1-3.png"><h2>天堂之光<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[死亡时]哀嚎，降低敌方所有单位的物防和魔防，并沉默8秒。对20级以上的单位命中率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/1-4.png"><h2>风之掌控<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]增加自身攻击速度25%。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(3).png">
+		 				 				<h2>暗夜射手</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：人形</h3>
+		 				 				<p>躲藏在暗处的精灵射手，擅长给人出其不意的攻击，并且很难被敌人发现。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/3-1.png"><h2>穿云箭<span>默认大招</span></h2>
+		 				 					<p>[大招]直线穿透攻击，并令目标能量降低，若目标能量低于20点，伤害提升到1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/3-2.png"><h2>击落<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]随机射击2个目标飞行单位，并击落4秒，对1级以上的目标击落效果降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/3-3.png"><h2>偷袭<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[偶尔]对敌方召唤师造成伤害。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/3-4.png"><h2>隐匿行踪<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[当受到的单次伤害超过20%的最大生命时]让自己隐藏起来，闪躲率提升30%，持续30秒。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(15).png">
+		 				 				<h2>地精切割机</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：机械</h3>
+		 				 				<p>抛射出巨型的链锯，切割前方的一切敌人。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/15-1.png"><h2>锯刃发射<span>默认大招</span></h2>
+		 				 					<p>[大招]发射链锯穿过敌人造成AOE伤害，对人类的伤害*1.5，若目标命中率降低，伤害提升为1.2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/15-2.png"><h2>地精的智慧<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]使友方一个机械获得一个吸收伤害的护盾。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/15-3.png"><h2>回收再利用<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[每当一个机械死亡时]获得圣盾，并提升攻击，持续10s</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/15-4.png"><h2>弹射座椅启动<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[死亡时]召唤一个40级的地精工程师</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(18).png">
+		 				 				<h2>飞刀表演者</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：人形</h3>
+		 				 				<p>飞刀在他手中被运用的灵活多变，如果你不想被他射中脑袋，最好在头上放一只苹果。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/18-1.png"><h2>连发飞刀<span>默认大招</span></h2>
+		 				 					<p>[大招]对敌方后排发射多枚飞刀，造成伤害和中毒效果。中毒5秒每1秒造成伤害，若目标身上存在持续伤害，则中毒伤害提高到2倍。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/18-2.png"><h2>临门一刀<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[每当有随从入场时]则随机朝一名敌人发射飞刀。造成物理伤害，CD3秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/18-3.png"><h2>削苹果<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[每当一个敌方随从死亡时]恢复自己生命，并提高攻击力。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/18-4.png"><h2>熟练瞄准<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[每当我方英雄召唤法师或射手时]增加自己暴击。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(40).png">
+		 				 				<h2>狮鹫</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：飞行</h3>
+		 				 				<p>盘旋在空中，时刻注视着地面上的敌人，它发动袭击的速度迅雷不及掩耳，令人防不慎防。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-1.png"><h2>啄眼<span>默认大招</span></h2>
+		 				 					<p>[大招]俯冲攻击地面目标，造成小范围伤害，被击中的目标暴击率、命中率降低，持续15秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-2.png"><h2>食肉<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]俯冲攻击1个地面单位，造成物理伤害,并吸血45%。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-3.png"><h2>野兽之力<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[我方英雄召唤野兽时]增加场上所有随从的10点能量，CD25秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/40-4.png"><h2>人型专家<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]对人类造成的伤害提升至1.5倍，并提升自身攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(45).png">
+		 				 				<h2>王牌火枪</h2><h3><img src="../images/jineng/z_sheshou.png">射手<br/>种族：人形</h3>
+		 				 				<p>他是一名杰出的猎人，无论面对多巨大的野兽，也能一枪撂倒。</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-1.png"><h2>对空射击<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[大招]多次射击，若目标为飞行，造成2倍伤害，若目标为人形，伤害减半。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-2.png"><h2>野兽之灾<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[偶尔]对敌人所有野兽造成伤害，并沉默3秒，对1级以上目标沉默几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-3.png"><h2>野兽畏惧<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[光环]敌方野兽攻击力降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/45-4.png"><h2>野兽专家<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动][-]对野兽的伤害提升50%并提升自身攻击力。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 	<li class="hide">
+		 				 		<div class="d_left">
+		 				 				<img src="../images/hero/detail(54).png">
+		 				 				<h2>侏儒工程师</h2><h3><img src="../images/jineng/z_mushi.png">牧师<br/>种族：人形</h3>
+		 				 				<p>他是一个天才，擅长各种稀奇古怪的发明，还懂得修理任何机械。你的手机要贴膜么？</p>
+		 				 		</div>
+		 				 		<div class="d_right">
+		 				 			<ul>
+		 				 				<li>
+		 				 					<img src="../images/jineng/54-1.png"><h2>虚弱光线<span>默认大招</span></h2>
+		 				 					<p>[大招]向一个随机前排敌人发射虚弱光线，光线发射期间目标将被定身3.6秒，对1级以上的目标几率降低，被虚弱的随从攻击和防御下降,持续10秒。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/54-2.png"><h2>变身光线<span>进阶到绿色解锁</span></h2>
+		 				 					<p>[入场时]发射奇异的光线，随机将一个后排随从变成青蛙，持续4.5秒，对1级以上单位几率降低。</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/54-3.png"><h2>机械强化<span>进阶到蓝色解锁</span></h2>
+		 				 					<p>[当机械随从入场时]给其增加物理防御</p>
+		 				 				</li>
+		 				 				<li>
+		 				 					<img src="../images/jineng/54-4.png"><h2>机械背心<span>进阶到紫色解锁</span></h2>
+		 				 					<p>[被动]物理伤害减免。</p>
+		 				 				</li>
+		 				 			</ul>
+		 				 		</div>
+		 				 		<div class="back"></div>
+		 				 	</li>
+		 				 </ul>
+		 			</div>
+	 			</div>
+	 		<!--
+	 			<div class="hero_page ">
+	 				<span class="all_up sui_up">上一页</span><span class="all_down sui_down">下一页</span>
+	 			</div>
+	 		-->
+	 		</div>
+	 		<div class="all hide">
+	 			<div class="all_list">
+	 				 <ul class="hero_img"> 
+	 				 </ul>
+	 				  <div class="hero_detail">
+		 				 <ul >
+		 				 </ul>
+		 			</div>
+	 			</div>
+	 		<!--
+	 			<div class="hero_page">
+	 				<span class="all_up">上一页</span><span class="all_down">下一页</span>
+	 			</div>
+	 		-->
+	 		</div>
+	 	</div>
+	 	
+	</div>
+	<!--尾部-->
+	<div class="footer2">
+		<div class="footer_box">
+		    <div class="tip">
+				<strong style="margin-top: 30px;">
+					<em style="color: #ddd697;">健康游戏公告</em>：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+				</strong>
+			</div>
+			<div class="copyright">
+				<a href="http://www.huiyaohuyu.com"><img src="../images/logo_ft.png" alt=""></a>
+				<p style="position: absolute;top: 30px;left: 530px;">优依购互娱科技有限公司版权所有 2015-2016 <a href="" style="color:#64899f; ">粤ICP备15108634号-1</a></p>
+				<p style="position: absolute;top: 50px;left: 576px;">《网络文化经营许可证》粤网文〔2016〕1029-186号</p>
+			</div>
+		</div>
+	</div>	 
+</div>
+<!--cnzz统计-->
+<script type="text/javascript">
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260597582'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260597582%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

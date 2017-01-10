@@ -1,0 +1,246 @@
+/*****
+Auther: WU HAI DONG;
+Time:2016.6.20;
+version:1.0.0;
+*******/
+
+/*reset*/
+body,div,em,i,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,table,th,td,input,button,label,select{padding:0;margin:0;outline:0 none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{font:12px/1.5 "Microsoft YaHei","Arial","Hiragino Sans GB",'\5FAE\8F6F\96C5\9ED1',tahoma,sans-serif;background:#fff;min-width:1260px;}
+a{outline:0 none;cursor:pointer;text-decoration:none;}
+ul,ol{list-style:none;}
+img{border:0 none;}
+em,i{font-style:normal;font-weight:normal;}
+h1,h2,h3{font-weight:normal;}
+h4{font-weight:bold;}
+table{border-collapse:collapse;border-spacing:0;width:100%;}
+.hide{display: none;}
+ 
+/**cnzz数据统计**/
+#cnzz_stat_icon_1260597582{
+	display: none;
+}
+
+/***************新闻详情页*********************/
+/***头部**/
+.navbox{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 10;
+	background-color: rgba(5,16,22,0.8);
+}
+.nav{
+	position: relative;
+	width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+ 
+}
+.nav .logo{
+	width: 300px;
+	height: 70px;
+	float: left;
+}
+.nav .logo img{
+	position: absolute;
+}
+.nav .logo h2{
+	margin-top: 10px;
+	margin-left: 120px;
+	color: #fddc84;
+	font-size: 18px;
+}
+.nav .logo h3{
+	margin-left: 120px;
+	color: #efeded;
+	font-size: 14px;
+}
+.nav  .nav_li{
+	float: left;
+	height: 70px;
+	width: 800px;
+	margin-left: 40px;
+
+}
+.nav  .nav_li a{
+	color: #a8b8dc;
+	font-size: 20px;
+}
+.nav .nav_li ul li{
+	float: left;
+	width: 140px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+.nav .nav_li ul li:hover{
+	color: #fddc84;
+}
+.nav .nav_li ul li.on{
+	color: #fddc84;
+}
+/*************首页尾部**************/
+.footer{
+	height: 380px;
+	width: 100%;
+	background-color: #042334;
+}
+.footer_box{
+	height: 380px;
+	width: 1200px;
+	margin: 0 auto ;
+}
+ 
+.copyright{
+	position: relative;
+	width: 1200px;
+	height: 200px;
+}
+.copyright img{
+	position: absolute;
+	top: 6px;
+	left: 176px;
+}
+.copyright p{
+	color: #64899f;
+	font-size: 14px;
+}
+.footer2{
+	height: 200px;
+	width: 100%;
+	background-color: #042334;
+}
+.footer_box .tip strong{
+	margin-left: 190px;
+	letter-spacing: 0.4px;
+	text-align: center;
+	display: inline-block;
+	color: #e1f8ff;
+	font-size: 12px;
+	font-weight: normal;
+}
+.news_container{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-image: url(../images/newsbg.jpg);
+	background-size: cover 1494px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: #051016;
+}
+.news_center{
+	position: relative;
+	width: 1200px;
+	margin: 400px auto 15px auto;
+}
+.n_right{
+	position: absolute;
+	top: 0;
+	right:0;
+	width: 290px;
+	height: 484px;
+	background-image: url(../images/r_download.png);
+	background-repeat: no-repeat; 
+}
+.n_right span.erwei{
+	position: absolute;
+	width: 230px;
+	height: 230px;
+	top:44px;
+	left:29px;
+	z-index: 1;
+}
+.n_right span.erwei img{
+	width: 100%;
+}
+.n_right .ios{
+	display: block;
+	width: 230px;
+	height: 60px;
+	margin-left: 29px;
+	margin-top: 294px;
+	padding-top: 2px;
+	background-color: #000;
+	border-radius:5px;
+	cursor: not-allowed;
+}
+.n_right .android{
+	display: block;
+	width: 230px;
+	height: 60px;
+	margin-left: 29px;
+	margin-top: 360px;
+	padding-top: 2px;
+	padding-left: 3px;
+	background-color: #952326;
+	border-radius:5px;
+}
+.n_right .ios:hover{
+	background-color: #182024;
+}
+.n_right .android:hover{
+	background-color: #9f2f2f;
+}
+.n_left{
+	width: 900px; 
+}
+.n_left>.title{
+	position: relative;
+	width: 900px;
+	height: 80px;
+	line-height: 80px;
+	padding-left: 48px;
+	background-color: #05202F;
+}
+.n_left>.title>h2{
+	display: inline-block;
+	color: #fff;
+	font-size: 36px;
+}
+.n_left>.title>span{
+	float: right;
+	position: relative;
+	top:26px;
+	right: 34px;
+	color: #adaba7;
+}
+.n_left>.title>span a{
+	color: #adaba7;
+}
+.news_detail{
+	background-color: #fff;
+	min-height: 484px;
+	padding: 0 43px 50px 43px;
+}
+.news_detail .title{
+	height: 100px;
+	text-align: center;
+	border-bottom: 1px dashed #ccc;
+}
+.news_detail .title h2{
+	margin-bottom: 2px;
+	padding-top: 20px;
+	color: #c49400;
+	font-size: 24px;
+	font-weight: bold;
+}
+.news_detail .title span{
+
+	color: #696565;
+	font-size: 14px;
+}
+.news_detail .neirong{
+	padding-top: 20px;
+}
+ 
+.news_detail .neirong img{
+	display: block;
+	margin: 20px auto;
+	width: 600px;
+
+}
+ 

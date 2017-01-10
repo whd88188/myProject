@@ -1,0 +1,53 @@
+/*reset*/
+body,div,em,i,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,table,th,td,input,button,label,select{padding:0;margin:0;outline:0 none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{font:12px/1.5 "Microsoft YaHei","Arial","Hiragino Sans GB",'\5FAE\8F6F\96C5\9ED1',tahoma,sans-serif;background:#fff;min-width:1260px;}
+a{outline:0 none;cursor:pointer;text-decoration:none;}
+ul,ol{list-style:none;}
+img{border:0 none;}
+em,i{font-style:normal;font-weight:normal;}
+h1,h2,h3{font-weight:normal;}
+h4{font-weight:bold;}
+/*****首页*******/
+/*header。所有子页面公用的header样式*/
+.header{ width: 100%;height: 85px;background-color: #262B2E;}
+.nav{width: 1260px;height: 85px;margin: 0 auto;}
+.top_logo{width: 420px;height: 85px;  float: left; margin-left: 45px;}
+.top_nav{width: 750px;height: 85px;float: left;}
+.top_nav {font-size: 18px;}
+.top_nav li{display:inline;float:left;margin:0 20px;}
+.top_nav ul li.on{border-top: 5px solid #2ba0f9;}
+.top_nav ul li.on a{color: #2bA0f9;margin-top:-5px;}
+.top_nav a{display: block;width: 82px;height: 85px;text-align: center;line-height: 85px;color: #fff;}
+.top_nav a:hover{
+	color: #2bA0f9;
+}
+ 
+.bg{width: 1150px;height: 50px;margin:0 auto;line-height: 50px;font-size: 16px;color: #6c6c6c;}
+.bg a{color: #6c6c6c;}
+.bg span{color:#FF7F00;}
+.bg a:hover{text-decoration: underline;}
+
+/*中间框部分*/
+.center{width: 1150px;margin: 0 auto;background-color:#fff;color: #000;font-size: 15px;padding: 40px 175px;line-height: 30px;margin-bottom: 50px;}
+.center h2{text-align: center;}
+.center h4{text-align: center;font-weight: normal;height: 40px;line-height: 40px;margin-bottom: 20px;}
+.center strong{margin-left: 30px;font-size: 18px;}
+.center p,.center h3{text-indent: 30px;}
+.center span{margin:0px auto;}
+.center a{color: #000;text-decoration: underline;}
+
+
+ 
+/*尾部。所有子页面共用的尾部样式*/
+.foot{width: 100%;height: 150px;background-color: #262B2E;}
+.foot_box{width: 800px;height: 160px;margin: 0 auto;padding-top:40px;padding-left:40px;position: relative;}
+.logo_ft{width: 270px;height: 56px;line-height: 56px;border-right: 2px solid #5b6065;float: left;position: relative;}
+.logo_ft img{position: absolute;top:-20px;}
+.foot_information{width: 480px;height: 80px;position: absolute;top:35px;left: 320px;float: left;padding-left: 15px;}
+.foot_information ul{height: 30px;}
+.foot_information li{display: block;float: left;margin-left: 2px;font-size: 15px;text-align: center;color: #fff;}
+.foot_information a{ color: #fff;}
+.foot_information a:hover{color: #ff6527;}
+.foot_information span{display: block;clear: both;font-size: 13px;color: #fff;letter-spacing:0.5px;}
+ #cnzz_stat_icon_1259092026{display: inline-block;width: 52px; height: 19px; }  /*cnzz统计*/
+ 

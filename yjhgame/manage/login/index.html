@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+<title>管理员登录</title>
+<style>
+*{padding:0; margin:0;font-family:"微软雅黑";}
+#header{height: 70px;border-bottom: 2px solid #39a631;}
+#content{width: auto;text-align: center;}
+.con{width: 30%;min-width:320px;height: 20em;margin:4em auto; border: thin solid #8EC172;}
+.con_title{background-color: #8EC172;width: auto;height: 2.3em;line-height: 2.3em;margin-bottom:1.5em;text-align: center;letter-spacing: 3px;font-size: 1.5em;font-weight: 800;color: #FFF;}
+.con_input{margin: 0em 0 1.5em 0;}
+.submit-btn{width: 14.2em;height: 2em;margin-top:1em;background-color: #62ab00;border-radius: 2px;border: 0px;color: #fff;font-size: 1em;font-weight: bold;cursor: pointer}
+.con_input label{ font-size: 1em;font-weight: bold;color: #333;}
+.con_input input{width: 15em;padding: 0.5em 1em;border: 1px solid #bbb;text-align: center;}
+.copyright{width: 100%;height: 30px;line-height: 30px; text-align: center;margin-top: 135px;}
+</style>
+</head>
+<body>
+<div id="header"></div>
+<div id="content">
+		<div class="con">
+			<div class="con_title">源计划游戏官网管理后台登录</div>
+			<div class="con_panel">
+			    <form action="login.php" method="post">
+					<div class="con_input">
+						 <input type="text" name="login_id" placeholder="管理账号"   />
+					</div>
+					<div class="con_input">
+						 <input type="password" name="password"  placeholder="账号密码"  />
+					</div>
+					<input type="submit" name="submit" value="登    录" class="submit-btn"/>
+				</form>
+			</div>
+	</div>
+	</center>
+	<div class="copyright">
+		<span>Copyright @huiyaohuyu</span>
+	</div>
+</div>
+
+<script>
+
+function isPlaceholder(){  
+    var input = document.createElement('input');  
+    return 'placeholder' in input;  
+}  
+  
+if (!isPlaceholder()) {//不支持placeholder 用jquery来完成  
+    $(document).ready(function() {  
+        if(!isPlaceholder()){  
+            $("input").not("input[type='password']").each(//把input绑定事件 排除password框  
+                function(){  
+                    if($(this).val()=="" && $(this).attr("placeholder")!=""){  
+                        $(this).val($(this).attr("placeholder"));//获取当前input的属性值，属性值可以获取也可以设置
+                        $(this).focus(function(){  //focus()方法是获取焦点，blur()方法是失去焦点
+                            if($(this).val()==$(this).attr("placeholder")) $(this).val("");  
+                            //当前input获得焦点时，把当前input设置为空
+                        });  
+                        $(this).blur(function(){  
+                            if($(this).val()=="")  $(this).val($(this).attr("placeholder"));   
+                            //if里面的执行语句是一句是可以不带括号，当大于一句时一定得带括号
+                        });  
+                    }  
+            });  
+            //对password框的特殊处理1.创建一个text框 2获取焦点和失去焦点的时候切换，先在原有input后面插入一个input，在得焦的时候把插入的隐藏，原有的出现；在失焦的时候把原有的隐藏，插入的出现  
+            var pwdField   = $("input[type=password]");  
+            var pwdVal     = pwdField.attr('placeholder');  
+            pwdField.after('<input id="pwdPlaceholder" type="text" value='+pwdVal+' autocomplete="off" />');  
+            var pwdPlaceholder = $('#pwdPlaceholder');  
+            pwdPlaceholder.show();  
+            pwdField.hide();  
+              
+            pwdPlaceholder.focus(function(){     
+                pwdPlaceholder.hide();  
+                pwdField.show();  
+                pwdField.focus();  
+            });  
+              
+            pwdField.blur(function(){  
+                if(pwdField.val() == '') {  
+                    pwdPlaceholder.show();  
+                    pwdField.hide();  
+                }  
+            });  
+              
+        }  
+    });  
+      
+}  
+
+</script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/*****
+Auther: WU HAI DONG;
+Time:2016.7.26;
+version:1.0.0;
+*******/
+
+/*reset*/
+body,div,em,i,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,table,th,td,input,button,label,select{padding:0;margin:0;outline:0 none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{font:12px/1.5 "Microsoft YaHei","Arial","Hiragino Sans GB",'\5FAE\8F6F\96C5\9ED1',tahoma,sans-serif;background:#fff;min-width:1260px;}
+a{outline:0 none;cursor:pointer;text-decoration:none;}
+ul,ol{list-style:none;}
+img{border:0 none;}
+em,i{font-style:normal;font-weight:normal;}
+h1,h2,h3{font-weight:normal;}
+h4{font-weight:bold;}
+table{border-collapse:collapse;border-spacing:0;width:100%;}
+.hide{display: none;}
+
+ 
+
+
+/****首页头部header****/
+.container{
+	min-width: 1200px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.container>img{
+	width: 100%;
+	display: block;
+}
+ 
+.video_play{
+	position: absolute;
+	top:37%;
+	left:23.5%;
+	width: 33.7%;
+	height: 34%;
+}
+.video_play video{
+	width: 100%;
+	display: none;
+}
+.video_play .play{
+	position: absolute;
+	width: 15%;
+	top: 32.5%;
+	left:42.3%;
+	z-index: 10;
+	cursor: pointer;
+	display: none;
+}
+
+ 
+ 
+/***
+.introduce{
+	position: absolute;
+	left:780px;
+	top:500px;
+	width: 386px;
+	height: 248px;
+	padding:25px 28px 25px 48px;
+	 
+}
+.introduce h2{
+	margin-bottom: 14px;
+	color: #fdb902;
+	font-size: 30px;
+	font-weight: bold;
+}
+.introduce p{
+	color: #fbf1c3;
+	font-size: 14px;
+	text-indent: 2em;
+}
+.scrolldown{
+	position: absolute;
+	bottom: 40px;
+	left: 500px;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+.scrolldown span{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin-left: -8px;
+	border-left:  2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transform: rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+}
+.scrolldown span:nth-of-type(1){
+	top:16px;
+}
+.scrolldown span:nth-of-type(2){
+	top:36px;
+}
+***/
+/*****尾部****/
+.footer{
+	width: 100%;
+	height: 190px;
+	background-color: #2d3749;
+
+}
+.footer .ft_box{
+	width: 820px;
+	height: 190px;
+	margin: 0 auto;
+	padding-top: 16px;
+	padding-left: 24px;
+}
+.footer .ft_box p{
+	color: #e1f8ff;
+	font-size: 12px;
+}
+.footer .ft_box p em{
+	color: #ddd697;
+}
+.footer .ft_box .copyright{
+	width: 780px;
+	height: 100px;
+	margin-top: 20px;
+}
+.footer .ft_box .copyright .left{
+	float: left;
+	width: 270px;
+	height: 100px;
+}
+.footer .ft_box .copyright .right{
+	float: left;
+	width: 508px;
+	height: 60px;
+	margin-top: 20px;
+	padding-top:8px;
+	border-left:2px solid #374358;
+}
+.footer .ft_box .copyright .right p{
+	text-align: center;
+	font-size: 14px;
+	color: #f3f1f2;
+}
+.footer .ft_box .copyright .right p a{
+	font-size: 14px;
+	color: #f3f1f2;
+}
+
+ 

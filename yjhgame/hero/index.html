@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>英雄库</title>
+<meta charset="UTF-8" >
+<meta name="keywords" content="源计划官网，源计划游戏，源计划英雄库">
+<meta name="description" content="源计划游戏，源计划官网，源计划英雄库" >
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript"src="../js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript"src="../js/common.js"></script>
+<script>
+	$(document).ready(function(){
+		var url=window.location.search;
+		if(url=="?id=1"){
+			$("ul.herolist li").eq(3).trigger("click");
+		}
+		for(var i=4;i<=7;i++){
+			if (url=="?id="+i) {
+				$("ul.herolist li").eq(i-1).trigger("click");
+			}
+		}
+	})
+</script>
+</head>
+<body>
+<div class="hero_container">
+    <!--头部header-->
+	<div class="header">
+		<a href=""><img src="../images/logo.png" class="logo"></a>
+		<img src="../images/navbg.png" class="navbg">
+		<div class="nav">
+			<ul>
+				<a href="../"><li>官网首页</li></a>
+				<a href="../news/"><li>新闻中心</li></a>
+				<a href="../data/"><li>游戏资料</li></a>
+				<a href="../strategy/"><li>游戏攻略</li></a>
+				<a href=""><li class="on">英雄库</li></a>
+				<p><span>关注公共号赢大奖 </span><img src="../images/hwc.png"><img src="../images/navwc.png" class="navwc"></p>
+			</ul>
+		</div>
+	</div >
+	
+ 	<div class="hero_content">
+ 		<h1 id="href" name="href">英雄库</h1>
+ 		<div class="ul_btn">
+			<div class="left"><img src="../images/l.png"></div>
+
+			<div class="hbox">
+				<ul class="detail">
+				 	<li>
+				 		<img src="../images/h/1.png"><h2>塔库斯</h2>
+						<div class="rt hide">
+							<img src="../images/h/1.jpg">
+							<h3>适应单位:特种战车</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">13.30%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">13.30%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">13.30%</em></p>
+							</div>
+						</div>
+				 	</li>
+				 	<li><img src="../images/h/2.png"><h2>凯恩</h2>
+				 		<div class="rt hide">
+				 			<img src="../images/h/2.jpg">
+				 			<h3>适应单位:步枪兵</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">12.60%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">15.40%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">12.60%</em></p>
+				 			</div>
+				 		</div>
+				 	</li>
+				 	<li><img src="../images/h/3.png"><h2>古洛特</h2>
+				 		<div class="rt hide">
+				 			<img src="../images/h/3.jpg">
+				 			<h3>适应单位:机枪兵</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">15.40%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">11.20%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">14.70%</em></p>
+				 			</div>
+				 		</div>
+				 	</li>
+					<li><img src="../images/h/4.png"><h2>阿修斯</h2>
+						<div class="rt hide">
+							<img src="../images/h/4.jpg">
+							<h3>适应单位:母舰</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">16.10%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">16.80%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">16.10%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/5.png"><h2>贝利</h2>
+						<div class="lt hide">
+							<img src="../images/h/5.jpg">
+							<h3>适应单位:机甲战士</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">15.82%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">11.90%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">15.60%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/6.png"><h2>迪金森</h2>
+						<div class="lt hide">
+							<img src="../images/h/6.jpg">
+							<h3>适应单位:迫击炮兵</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">11.62%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">16.10%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">11.90%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/7.png"><h2>卡普斯</h2>
+						<div class="lt hide">
+							<img src="../images/h/7.jpg">
+							<h3>适应单位:导弹兵</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">11.62%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">16.52%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">11.62%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/8.png"><h2>翁曼巴</h2>
+						<div class="lt hide">
+							<img src="../images/h/8.jpg">
+							<h3>适应单位:主战坦克</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">14.70%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">14.42%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">14.00%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/9.png"><h2>阿诺德</h2>
+						<div class="rt hide">
+							<img src="../images/h/9.jpg">
+							<h3>适应单位:对地轰炸机</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">14.00%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">15.40%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">14.00%</em></p>
+							</div>
+						</div>
+					</li>
+				 	<li><img src="../images/h/10.png"><h2>汉特</h2>
+				 		<div class="rt hide">
+				 			<img src="../images/h/10.jpg">
+				 			<h3>适应单位:陆战队</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">7.70%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">8.10%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">8.10%</em></p>
+							</div>
+				 		</div>
+				 	</li>
+				 	<li><img src="../images/h/11.png"><h2>艾达</h2>
+				 		<div class="rt hide">
+				 			<img src="../images/h/11.jpg">
+				 			<h3>适应单位:机甲</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">12.83%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">10.50%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">13.07%</em></p>
+							</div>
+				 		</div>
+				 	</li>
+					<li><img src="../images/h/12.png"><h2>莎莉</h2>
+						<div class="rt hide">
+							<img src="../images/h/12.jpg">
+							<h3>适应单位:远程兵</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">15.40%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">11.62%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">15.40%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/13.png"><h2>霍蒙德</h2>
+						<div class="lt hide">
+							<img src="../images/h/13.jpg">
+							<h3>适应单位:坦克</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">11.90%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">17.50%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">12.04%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/14.png"><h2>瓦瑞夫</h2>
+						<div class="lt hide">
+							<img src="../images/h/14.jpg">
+							<h3>适应单位:战舰</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">16.10%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">18.20%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">16.10%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/15.png"><h2>莱昂</h2>
+						<div class="lt hide">
+							<img src="../images/h/15.jpg">
+							<h3>适应单位:导弹车</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">11.62%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">17.36%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">11.62%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/16.png"><h2>史蒂夫</h2>
+						<div class="lt hide">
+							<img src="../images/h/16.jpg">
+							<h3>适应单位:防空导弹车</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">11.62%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">17.36%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">11.60%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/17.png"><h2>南茜</h2>
+						<div class="rt hide">
+							<img src="../images/h/17.jpg">
+							<h3>适应单位:坦克</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">14.00%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">15.40%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">14.00%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/18.png"><h2>伊格纳</h2>
+						<div class="rt hide">
+							<img src="../images/h/18.jpg">
+							<h3>适应单位:单管导弹车</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">16.10%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">16.80%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">16.10%</em></p>
+							</div>
+						</div>
+					</li>
+					<li><img src="../images/h/19.png"><h2>柏基尔</h2>
+						<div class="rt hide">
+							<img src="../images/h/19.jpg">
+							<h3>适应单位:防空导弹兵</h3>
+							<div class="btm">
+								<h4>强化</h4>
+								<p>&nbsp;H P：<span class="q1"></span><em class="num1">16.10%</em></p>
+								<p>攻击：<span class="q2"></span><em class="num2">18.20%</em></p>
+								<p>防御：<span class="q3"></span><em class="num3">16.10%</em></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="right"><img src="../images/r.png"></div>
+		</div>
+		<ul class="herolist">
+			 	<li class="on">陆战队</li>
+			 	<li>半机械步兵</li>
+			 	<li>导弹兵</li>
+			 	<li>坦克</li>
+			 	<li>机甲</li>
+			 	<li>导弹车</li>
+			 	<li>飞机</li>
+		</ul>
+		<div class="hero_dt">
+			<div class="l_btn"><span></span></div>
+			<div class="r_btn"><span></span></div>
+			<ul>
+				<li>
+					<img src="../images/hr/h1-4.jpg">
+					<div class="hero_name">海豹突击小队</div>
+					<div class="introduce">
+						<h2>步枪兵</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 前B</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级连射打击：武器开启连射模式，攻击速度加快</p>
+						<h5>英雄技能</h5>
+						<p>注射兴奋剂，5秒内攻击提升30%，持续时间内攻击有10%的几率造成敌方眩晕2秒</p>
+						<h5>特殊技能</h5>
+						<p>对轻甲伤害提高30%</p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/hr/h1-5.jpg" >
+					<div class="hero_name">阿尔法小队</div>
+					<div class="introduce">
+						<h2>激光枪兵</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 前B</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级充能打击：武器进入充能状态，在一定时间内攻击翻倍</p>
+						<h5>英雄技能</h5>
+						<p>发射激光攻击目标，激光持续1.5秒，每0.3秒造成一次攻击力40%的伤害</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/hr/h1-3.jpg" >
+					<div class="hero_name">三角洲小队</div>
+					<div class="introduce">
+						<h2>步枪兵</h2><br>
+						<h4>初始品质： <span>紫</span></h4><br>
+						<h4>战斗位置： 前B</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>3级充能打击：武器进入充能状态，在一定时间内攻击翻倍</p>
+						<h5>英雄技能</h5>
+						<p>注射兴奋剂，5秒内攻击提升30%，持续时间内攻击有10%的几率造成敌方眩晕2秒</p>
+						<h5>特殊技能</h5>
+						<p>对轻甲伤害提高30%</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="hero_dt hide">
+			<div class="l_btn"><span></span></div>
+			<div class="r_btn"><span></span></div>
+			<ul>
+				 <li>
+					<img src="../images/hr/h2-1.jpg">
+					<div class="hero_name">终结者</div>
+					<div class="introduce">
+						<h2>机枪兵</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 前A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级单体防御：装甲充能，自身装甲防御在一定时间内翻倍增加</p>
+						<h5>英雄技能</h5>
+						<p>防御增加30%持续4秒同时回复己方单位20%能量。</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/hr/h2-2.jpg" >
+					<div class="hero_name">反抗者</div>
+					<div class="introduce">
+						<h2>火焰兵</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 前A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级群体防御：释放范围能量护罩抵挡攻击一段时间直到护罩被击破</p>
+						<h5>英雄技能</h5>
+						<p>装甲充能4秒，受到的伤害减少35%，装甲充能期间每秒回复自身血量5%</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="hero_dt hide">
+			<div class="l_btn"><span></span></div>
+			<div class="r_btn"><span></span></div>
+			<ul>
+				<li>
+					<img src="../images/hr/h3-1.jpg">
+					<div class="hero_name">爱国者小队</div>
+					<div class="introduce">
+						<h2>防空导弹兵</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 后A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级前排范围攻击：发出导弹弹幕攻击敌方前排单位</p>
+						<h5>英雄技能</h5>
+						<p>发射高爆榴弹对范围内敌方造成攻击力120%的伤害，并每秒受到单次伤害8%的燃烧伤害</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/hr/h3-2.jpg" >
+					<div class="hero_name">毁灭小队</div>
+					<div class="introduce">
+						<h2>迫击炮兵</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 后A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级后排范围攻击：连续发出数枚重炮攻击敌方后排单位</p>
+						<h5>英雄技能</h5>
+						<p>装填集束炸弹对范围内单位造成攻击力150的伤害</p>
+						<h5>特殊技能</h5>
+						<p>对重甲伤害提高50%</p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/hr/h3-3.jpg" >
+					<div class="hero_name">火凤凰小队</div>
+					<div class="introduce">
+						<h2>导弹兵</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 后A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级单体打击:发出3枚导弹精准打击敌方单体目标。</p>
+						<h5>英雄技能</h5>
+						<p>发射20枚飞弹攻击敌人，每发飞弹为单次伤害的15%</p>
+						<h5>特殊技能</h5>
+						<p>对中甲伤害提高30%</p>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="hero_dt hide">
+			<div class="l_btn"><span></span></div>
+			<div class="r_btn"><span></span></div>
+			<ul>
+				<li>
+					<img src="../images/hr/h4-1.jpg" >
+					<div class="hero_name">暴君</div>
+					<div class="introduce">
+						<h2>主战坦克</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 后A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级攻城模式：在一段时间内固定展开成攻城模式增加攻击和攻速，攻击造成范围伤害</p>
+						<h5>英雄技能</h5>
+						<p>发射自身攻击力400%的聚能一击打击单体目标</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/hr/h4-2.jpg" >
+					<div class="hero_name">战神</div>
+					<div class="introduce">
+						<h2>激光坦克</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 后A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级穿透攻击：蓄能发射一发重型激光炮，无视防御穿透造成大量伤害</p>
+						<h5>英雄技能</h5>
+						<p>发射激光攻击目标，激光持续1.5秒，每0.3秒造成一次攻击力50%的伤害</p>
+						<h5>特殊技能</h5>
+						<p>对重甲伤害提高30%</p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/hr/h4-3.jpg" >
+					<div class="hero_name">荣耀使者</div>
+					<div class="introduce">
+						<h2>特种战车</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 后A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级治疗：技能瞬间回复范围内己方单位X%血量 </p>
+						<h5>英雄技能</h5>
+						<p>恢复范围内除了自己外所有己方机甲血量，恢复4次每次恢复自身攻击力120%的血量</p>
+						<h5>特殊技能</h5>
+						<p>对轻甲伤害提高30%</p>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="hero_dt hide">
+			<div class="l_btn"><span></span></div>
+			<div class="r_btn"><span></span></div>
+			<ul>
+				<li>
+					<img src="../images/hr/h5-1.jpg">
+					<div class="hero_name">天盾</div>
+					<div class="introduce">
+						<h2>机甲战士</h2> <br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 前A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级范围防御：在阵前展开巨盾抵挡敌方攻击一段时间，能够百分比反射伤害</p>
+						<h5>英雄技能</h5>
+						<p>开启能量护盾持续4秒并吸引敌人所有活力，护盾值为自身生命值的120%</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>	
+				</li>
+				<li >
+					<img src="../images/hr/h5-2.jpg" >
+					<div class="hero_name">曙光</div>
+					<div class="introduce">
+						<h2>四足机甲</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 前A</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级范围防御：释放能量磁场为己方所有单位套上能量护盾一段时间</p>
+						<h5>英雄技能</h5>
+						<p>被击毁后引爆自毁装置造成129%爆炸伤害</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>
+				</li>
+			</ul>		
+		</div>
+		<div class="hero_dt hide">
+			<div class="l_btn"><span></span></div>
+			<div class="r_btn"><span></span></div>
+			<ul>
+				<li>
+					<img src="../images/hr/h6-1.jpg">
+					<div class="hero_name">浩劫</div>
+					<div class="introduce">
+						<h2>单管导弹车</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 后B</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级单体打击：发射战略重型火箭炮对敌方单体造成大量伤害</p>
+						<h5>英雄技能</h5>
+						<p>发射一枚反物质导弹对范围内敌方单位造成攻击力150%的伤害</p>
+						<h5>特殊技能</h5>
+						<p>对重甲伤害提高30%</p>
+					</div>	
+				</li>
+				<li>
+					<img src="../images/hr/h6-2.jpg" >
+					<div class="hero_name">战斧</div>
+					<div class="introduce">
+						<h2>多管导弹车</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 后B</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级后排打击： 连续发射小型追踪弹打击敌方后排单位</p>
+						<h5>英雄技能</h5>
+						<p>发射空地导弹对范围内敌方单位造成攻击力150%的伤害</p>
+						<h5>特殊技能</h5>
+						<p>对中甲伤害提高30%</p>
+					</div>	
+				</li>
+				<li>
+					<img src="../images/hr/h6-3.jpg" >
+					<div class="hero_name">凯撒</div>
+					<div class="introduce">
+						<h2>防空导弹车</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置： 后B</h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级范围乱射： 连续发射小型追踪弹打击前排3个随机目标，优先打击中甲单位</p>
+						<h5>英雄技能</h5>
+						<p>发射电磁导弹攻击范围内目标，持续3秒造成伤害，每秒对底面单位造成攻击力55%的伤害</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>	
+				</li>
+			</ul>		
+		</div>
+		<div class="hero_dt hide">
+			<div class="l_btn"><span></span></div>
+			<div class="r_btn"><span></span></div>
+			<ul>
+				<li>
+					<img src="../images/hr/h7-1.jpg">
+					<div class="hero_name">瓦尔基里</div>
+					<div class="introduce">
+						<h2>对地轰炸机</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置：  </h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级纵列轰炸：向敌方区域发射多枚导弹进行轰炸，被轰炸单位附带减少攻速</p>
+						<h5>英雄技能</h5>
+						<p>对范围内单位进行轰炸造成攻击力120%的伤害，且15%的几率眩晕敌人3秒</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/hr/h7-2.jpg" >
+					<div class="hero_name">自由之翼</div>
+					<div class="introduce">
+						<h2>对空战斗机</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置：  </h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级空中打击：打击敌方所有空中单位造成伤害同时降低其攻击力一段时间</p>
+						<h5>英雄技能</h5>
+						<p>发射引力波，控制范围内的敌方单位使其不能攻击持续3秒，自身防御提升15%</p>
+						<h5>特殊技能</h5>
+						<p>无</p>
+					</div>							
+				</li>
+				<li>
+					<img src="../images/hr/h7-3.jpg" >
+					<div class="hero_name">盖亚</div>
+					<div class="introduce">
+						<h2>母舰</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置：  </h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级全体攻击：发射脉冲电磁炮对敌方机甲单位造成伤害并瘫痪一段时间</p>
+						<h5>英雄技能</h5>
+						<p>发射电磁波干扰目标范围内的单位造成120%攻击力伤害，并20%几率瘫痪3秒</p>
+						<h5>特殊技能</h5>
+						<p>对中甲伤害提高30%</p>
+					</div>							
+				</li>
+				<li>
+					<img src="../images/hr/h7-4.jpg" >
+					<div class="hero_name">奥米迦</div>
+					<div class="introduce">
+						<h2>战舰</h2><br>
+						<h4>初始品质： <span>橙</span></h4><br>
+						<h4>战斗位置：  </h4>
+						<hr>
+						<h5>自身技能</h5>
+						<p>4级单体打击：持续两秒充能对敌方单体目标进行毁灭性打击</p>
+						<h5>英雄技能</h5>
+						<p>发射自身攻击力700%的蓄力离子炮攻单体目标</p>
+						<h5>特殊技能</h5>
+						<p>对重甲伤害提高30%</p>
+					</div>							
+				</li>
+			</ul>		
+		</div>
+</div>
+ 	
+ 	<!--底部footer-->
+	<div class="footer">
+			<div class="ft_box">
+				<p class="f_ct">客服qq：2153754487 &nbsp;&nbsp;&nbsp;&nbsp; 官方群：177697981</p>
+				<p><em>健康游戏公告：</em>抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+				<div class="copyright">
+					<div class="left"><a href="http://www.huiyaohuyu.com/"><img src="../images/logo_ft.png" ></a></div>
+					<div class="right">
+						<p>优依购互娱科技有限公司版权所有 2015-2016 <a href="">粤ICP备15108634号-2</a></p>
+						<p>《网络文化经营许可证》粤网文〔2016〕1029-186号</p>
+					</div>
+				</div>
+			</div>
+	</div>	
+</div>
+</body>
+</html>

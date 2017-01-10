@@ -1,0 +1,388 @@
+/******reset*******/
+body,div,em,i,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,table,th,td,input,button,label,select{padding:0;margin:0;outline:0 none; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{font:12px/1.5 "Microsoft YaHei","Arial","Hiragino Sans GB",'\5FAE\8F6F\96C5\9ED1',tahoma,sans-serif;background:#fff;}
+a{outline:0 none;cursor:pointer;text-decoration:none; color: #3c4659;}
+ul,ol{list-style:none;}
+img{ border:0 none;}
+em,i{font-style:normal;font-weight:normal;}
+h1,h2,h3{font-weight:normal;}
+h4{font-weight:bold;}
+table{border-collapse:collapse;border-spacing:0;width:100%;}
+.hide{display: none;}
+ 
+
+
+body{
+	min-width:320px;
+	max-width:1080px;
+	margin:0 auto;
+}
+
+.container{
+	margin:0 auto;
+	width: 100%;
+	position: relative;
+}
+.loadbg{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width: 100%;
+	z-index: 10;
+}
+.download{
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	z-index: 10; 
+	opacity:0.8;
+}
+.download img{
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+/******头部********/
+.head{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.head img{
+	width: 100%;
+}
+.head .video{
+	position: absolute;
+	left: 39%;
+	top: 39.5%;
+	width: 21%;
+	height: 13%;
+	cursor: pointer;
+}
+.head .video_play{
+	width: 94%;
+	height: 35%;
+	position: absolute;
+	top: 20%;
+	left: 2.8%;
+	background-color: rgb(9,18,27);
+	display: none;
+}
+.head .video_play h2{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+}
+.head .video_play  span{
+	float: right;
+	margin-right: 6px;
+	font-size: 24px;
+	cursor: pointer;
+}
+.head .video_play video{
+	width: 100%;
+}
+/*****新闻*****/
+.news{
+	width: 100%;
+	margin-top: -5px;
+	overflow: hidden;
+}
+.news>ul{
+	height: 60px;
+}
+.news>ul>li{
+	float: left;
+	width: 25%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #2f394b;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+}
+.news>ul>li.on{
+	background-color: #005367;
+	color: #ffe8c1;
+}
+
+.news>div>ul>li{
+	height: 60px;
+	line-height: 60px;
+	padding-right: 5px;
+	font-size: 0.8rem;
+	color: #3c4659;
+	border-bottom: 1px dashed #A7A7A7;
+} 
+.news>div>ul>li em{
+	color: #005367;
+}
+.news>div>ul>li span{
+	float: right;
+	color: #a4a4a4;
+}
+.more{
+	width: 92%;
+	height: 50px;
+	line-height: 50px;
+	margin: 20px auto;
+	text-align: center;
+	background-color: #dbdbdb;
+	font-size: 20px;
+	color: #3c4659;
+}
+.more img{
+	margin-top: 13px;
+	cursor: pointer;
+}
+.more p{
+	color: #3c4659;
+	font-size: 20px;
+}
+
+/*****联系*****/
+.contact {
+	width: 100%;
+	padding: 16px 2% 16px 2%;
+	background-color: #2f394b;
+	overflow: hidden;
+	 
+}
+.contact ul li{
+	height: 70%;
+	width: 33.3%;
+	float: left;
+	text-align: center;
+	border-left: 1px solid #ccc
+}
+.contact ul li:first-child{
+	border-left:none;
+}
+.contact ul li img{
+	width: 50%;
+}
+
+/*****尾部*******/
+.footer{
+	position: relative;
+	width: 100%;
+	background-color: #141e2f;
+	overflow: hidden;
+	 
+}
+.footer img{
+	width: 100%;
+}
+
+
+/*
+.footer p{
+	position: absolute;
+	top: 4px;
+	left:31%;
+	width: 500px;
+	color: #dbdbdb;
+}
+ /
+/****去除浏览器默认最小字体*
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.70);
+}
+.smallsize-font {
+ 　　font-size:8.4px; 
+
+ }
+**/
+
+
+/*******自适应   主要针对字体大小和图片自适应******/
+@media only screen and (max-width: 1920px) { 
+.news>div>ul>li{
+	font-size: 1.1rem;
+}
+.contact ul {
+	min-height: 120px;
+}
+.contact ul li h2{
+	color: #dbdbdb;
+	font-size: 15px;
+}
+.footer p{
+	padding-left: 10px;
+	top:30px;
+}
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(1.3);
+}
+.smallsize-font {
+ 　　font-size:15.6px; 
+
+ }}
+
+@media only screen and (max-width: 660px) {
+.contact ul {
+	min-height: 120px;
+}
+.footer p{
+	top:22px;
+}
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(1.2);
+}
+.smallsize-font {
+ 　　font-size:14.4px; 
+
+ }}
+@media only screen and (max-width: 600px) { 
+.news>div>ul>li{
+	font-size: 0.9rem;
+}
+.contact ul li h2{
+	color: #dbdbdb;
+	font-size: 15px;
+}
+.footer p{
+	padding-left: 0;
+	top:17px;
+}
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(1.1);
+}
+.smallsize-font {
+ 　　font-size:13.2px; 
+
+ }
+}
+@media only screen and (max-width: 500px) {
+.contact ul li h2{
+	color: #dbdbdb;
+	font-size: 14px;
+}
+ .footer p{
+ 	padding-left: 0;
+	top:13px;
+}
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(1.0);
+}
+.smallsize-font {
+ 　　font-size:12px; 
+ }
+}
+@media only screen and (max-width: 445px) { 
+.news>div>ul>li{
+	font-size: 0.9rem;
+}
+.contact ul {
+	min-height: 96px;
+}
+.contact ul li h2{
+	color: #dbdbdb;
+	font-size: 14px;
+}
+.footer p{
+	padding-left: 0;
+	top:10px;
+}
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.90);
+}
+.smallsize-font {
+ 　　font-size:10.8px; 
+
+ }
+}
+
+@media only screen and (max-width: 400px) { 
+.news>div>ul>li{
+	font-size: 0.8rem;
+}
+.contact ul {
+	min-height: 86px;
+}
+.contact ul li h2{
+	color: #dbdbdb;
+	font-size: 13px;
+}
+.footer p{
+	padding-left: 0;
+	top:7px;
+}
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.80);
+}
+.smallsize-font {
+ 　　font-size:9.6px; 
+
+ }
+}
+
+@media only screen and (max-width: 380px){
+	.news>div>ul>li{
+	font-size: 0.8rem;
+}
+ 
+}
+@media only screen and (max-width: 360px){ 
+
+.news>div>ul>li{
+	font-size: 0.8rem;
+}
+.contact ul {
+	min-height: 80px;
+}
+.contact ul li h2{
+	color: #dbdbdb;
+	font-size: 12px;
+}
+.footer p{
+	padding-left: 6px;
+	top: 5px;
+}
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.75);
+}
+.smallsize-font {
+ 　　font-size:9px; 
+
+ }
+}
+@media only screen and (max-width: 340px){ 
+
+.footer p{
+	padding-left: 6px;
+	top: 3px;
+}
+.small-font{
+    font-size: 12px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.70);
+}
+.smallsize-font {
+ 　　font-size:8.4px; 
+
+ }
+  
+.news div.list{
+	overflow: hidden;
+ }
+} 

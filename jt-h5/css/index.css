@@ -1,0 +1,415 @@
+body,ul,h1,h2,h3,h4,h5,h6,form,input,p{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+body{
+	/* 页面最大宽度 */
+	max-width: 640px;
+	font-family: "\5FAE\8F6F\96C5\9ED1";
+	/* 总体背景色 */
+	background-color: #2b1a13;
+	margin: 0 auto;
+	font-size: 14px;
+	
+}
+a{
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+	   -moz-tap-highlight-color: rgba(0,0,0,0);  
+			tap-highlight-color: rgba(0,0,0,0);  
+	-webkit-focus-ring-color: rgba(0,0,0,0);  
+	   -moz-focus-ring-color: rgba(0,0,0,0); 
+	    		focus-ring-color: rgba(0,0,0,0);   
+}
+*{
+	-webkit-tap-highlight-color: transparent;
+}
+
+li{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.container{
+	position: relative;
+	width: 100%
+	height:auto;
+	/* 底部留空 */
+	padding-bottom: 80px;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: auto;
+	
+}
+.header .header-bg{
+	width: 100%;
+}
+.header .header-info-wrap{
+	position: absolute;
+	bottom: 4px;
+	left: 0px;
+	width: 100%;
+}
+.header .header-info-wrap img{
+	float: left;
+	width: 84px;
+	height: 84px;
+	margin-left: 10px;
+}
+.header .header-info-wrap .header-info{
+	float: left;
+	color: #fff;
+	padding-top: 10px;
+	padding-left: 16px;
+}
+.header .header-info-wrap .header-info h1{
+	font-size: 18px;
+	line-height: 28px;
+}
+.header .header-info-wrap .header-info p{
+	font-size: 14px;
+	line-height: 26px;
+	color: #fff;
+}
+
+.header .header-info-wrap .header-info p span{
+	color: #ffc949;
+}
+
+.introduce{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	background-image: url(../img/bg1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+.introduce .game-info{
+	width: 76%;
+	padding: 2% 12% 7% 12%;
+	background-color: none;
+}
+.introduce .game-info h3{
+	width: 100%;
+	line-height: 2.4em;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+}
+.introduce .game-info p{
+	font-family: "SimHei";
+	line-height: 1.5em;
+	font-size: 1em;
+	text-indent: 2em;
+	text-align: justify;
+}
+
+.fuli{
+	width: 90%;
+	margin: 6% auto;
+	padding: 4px 0;
+	border: 1px solid #966530;
+	background-color: rgba(27,18,11,0.8);
+}
+.fuli h3{
+	width: 100%;
+	line-height: 36px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #fee089;
+	text-align: center;
+}
+.fuli h4{
+	margin-left: 10px;
+	font-size: 0.8em;
+	line-height: 2em;
+	font-weight: bold;
+	color: #fee089;
+}
+.fuli p{
+	padding: 0 1em;
+	line-height: 24px;
+	font-size: 0.8em;
+	color: #fff;
+	text-indent: 1em;
+}
+.fuli .fuli_img1{
+	position: relative;
+	margin: 0.4em 0;
+}
+.fuli .fuli_img1 li{
+	width: 28%;
+	display: inline-block;
+	margin-left: 1.2em;
+}
+.fuli .fuli_img1 li.img1{
+	width: 20%;
+}
+.fuli .fuli_img1 li.img2{
+	position: relative;
+}
+.fuli ul li img{
+	width: 100%;
+}
+.fuli ul li h5{
+	width: 100%;
+	line-height: 26px;
+	text-align: center;
+	font-size:10px;
+	color:#fff;
+}
+.fuli .fuli_img2{
+	margin: 0.6em 0;
+}
+.fuli .fuli_img2 li{
+	display: inline-block;
+	width: 20%;
+	margin-left: 2em;
+}
+.game-video{
+	width: 100%;
+	margin-top: 9%;
+	padding: 1% 0 7% 0;
+	background-image: url(../img/bg2.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+.game-video h3{
+	width: 100%;
+	line-height: 2.4em;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+}
+.game-video video{
+	display: block;
+	width: 78%;
+	margin: 0 auto;
+}
+
+.game-img{
+	width: 90%;
+	margin: 6% auto 6% auto;
+	border: 1px solid #966530;
+	background-color: #1b120b;
+	
+}
+.game-img h3{
+	width: 100%;
+	line-height: 2.4em;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+	color: #fee089;
+	
+}
+.img-swiper{
+	width: 90%;
+	margin: 4% auto 8% auto;
+	overflow: auto;
+}
+.img-swiper ul li{
+	float: left;
+	margin-right:4px;
+}
+
+.img-swiper ul li img{
+	width: 100%;
+}
+
+.game-news{
+	margin-top: 6%;
+	width: 86%;
+	padding: 2% 7%;
+	background-image: url(../img/bg3.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+.game-news h3{
+	width: 100%;
+	margin-top: 0.6em;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #000;
+
+}
+.game-news ul li{
+	position: relative;
+	width: 100%;
+	padding: 8% 0;
+	border-bottom: 1px solid #a98159;
+}
+.game-news ul li:last-child{
+	border-bottom: none;
+}
+.game-news ul li img{
+	width: 30%;
+	display: inline-block;
+}
+.game-news ul li .news-info{
+	position: absolute;
+	top: 20%;
+	left: 33%;
+	color: #000;
+}
+.game-news ul li .news-info a{
+	display: block;
+	line-height: 1.6em;
+	font-size: 0.9em;
+	color: #000;
+}
+
+
+.swiper{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+	z-index: 100;
+}
+.swiper-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80vw;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	background-color: #fff;
+	background-color: transparent;
+}
+.swiper-container .swiper-slide{
+	box-sizing: border-box;
+	width: 100%!important;
+	padding: 0px 2%;
+	background-color: transparent;
+}
+.swiper-container img{
+	width: 100%;
+}	
+.swiper-pagination-bullet{
+	background-color: #fff;
+}
+.swiper-pagination-bullet-active{
+	
+}
+
+/*媒体查询*/
+@media screen and (max-width: 1920px) {
+	.game-info h3{
+		font-size: 26px;
+	}
+	.bg p{
+		font-size: 22px;
+	}
+	.game-news ul li .news-info a{
+		font-size: 16px;
+	}
+	.game-news ul li .news-info p{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.game-info h3{
+		font-size: 22px;
+	}
+	.bg p{
+		font-size: 20px;
+	}
+	.game-news ul li .news-info a{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 786px) {
+	.game-info h2{
+		font-size: 20px;
+	}
+	.bg p{
+		font-size: 18px;
+	}
+	.game-news ul li .news-info a{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 641px) {
+	.game-info h3{
+		font-size: 18px;
+	}
+	.bg p{
+		font-size: 16px;
+	}
+	
+}
+@media screen and (max-width: 415px) {
+	.game-info h3{
+		font-size: 16px;
+	}
+	.bg p{
+		font-size: 14px;
+	}
+	.game-news ul li .news-info a{
+		font-size: 14px;
+	}
+	.game-news ul li .news-info p{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 376px) {
+	.bg p{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 361px) {
+	.bg p{
+		font-size: 14px;
+	}
+	.game-news ul li .news-info a{
+		font-size: 13px;
+	}
+	.game-news ul li .news-info p{
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 321px) {
+	.bg p{
+		font-size: 12px;
+	}
+	.game-news ul li .news-info a{
+		font-size: 12px;
+	}
+	.game-news ul li .news-info p{
+		font-size: 12px;
+	}
+}
+ 
+
+
+
+
+
+
+
+
+

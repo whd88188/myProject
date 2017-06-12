@@ -1,0 +1,212 @@
+*{
+	tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -ms-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   	font-family: "microsoft yahei";
+}
+html{
+	font-size: calc(100vw/3.75);
+}
+body,html,p,ul{
+	margin: 0;
+	padding:0;
+	font-family: "microsoft yahei","microsoft sans serif";
+	list-style: none;
+}
+body{
+	width:100%;
+	max-width: 640px;
+	min-width: 320px;
+	background-color: #dce2ed;
+	position: relative;
+	margin: 0 auto;
+}
+.head{
+	position: relative;
+	width:100%;
+}
+body img{
+	border:0;
+	line-height:0;
+	display:block;
+	width:100%;
+}
+.fontcolor1{
+	color: #646464;/*ç°è‰²*/
+}
+.fontcolor2{
+	background: #b6b2db;/*å®‰è£…åº•è‰²*/
+}
+.fontcolor3{
+	background: #53c2be;/*è“è‰²*/
+}
+.fontcolor4{
+		background: #fbc01a;
+}
+.fontcolor4{
+		color: #7d7d7d;
+}
+.fontsize1{
+	font-size: 0.36rem;
+}
+.fontsize2{
+	font-size: 0.32rem;
+}
+.fontsize3{
+	font-size: 0.22rem;
+}
+
+
+.icon{
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	height: 1.6rem;
+  padding:0.10rem 0.15rem 0.1rem 0.15rem;
+  background:rgba(0,0,0,0.6);
+}
+.iconimg{
+	width: 1.4rem;
+}
+.icontext{
+	padding: 0.05rem 0.1rem;
+	line-height: 0.35rem;
+}
+.el-title{
+	/*height: 1.2rem;*/
+	font-size:0.32rem;
+}
+.floatleft{
+	float: left;
+}
+.floatright{
+	float: right;
+}
+.el-xx {
+	overflow: hidden;
+}
+.el-xx span{
+	float: left;
+	width:0.24rem;
+}
+.el-an span{
+	float: left;
+	color: #FFF;
+	text-align: center;
+	padding: 0.02rem 0.06rem;
+	border-radius: 4px;
+}
+.jg{
+	float: left;
+	width: 0.08rem;
+}
+.spanpf{
+	float: left;
+}
+.iconbottn{
+		text-align: center;
+		padding-top:0.48rem;
+		color: #FFF;
+}
+.iconbottn1{
+		text-align: center;
+		padding-top:1.3rem;
+		color: #fe5936;
+}
+.bt-az{
+	position: relative;
+	width: 1.6rem;
+	text-align: center;
+	line-height: 0.65rem;
+	border-radius: 4px;
+	border: 1px solid #ff7200;
+	color: #ff7200;
+	font-size: 0.32rem;
+}
+.bt-az a{
+	color: #ff7200;
+	text-decoration:none;
+}
+.az-sh{
+	position: absolute;
+	top: 0.4rem;
+	left: 0.1rem;
+	line-height: 0rem;
+}
+.info{
+	width: 100%;
+	text-align: center;
+  padding-top: 0.7rem;
+}
+.auto{
+	width:96%;
+	margin: 0.2rem auto 0 auto;
+}
+.c-down{
+	width:100%;
+	position: relative;
+	/*height:1.8rem;
+	background: #fff;
+	padding:2% 0;*/
+}
+.z-d{
+	width:100%;
+	/*padding:4% 0;
+	background: #3d82d0;
+	border-radius: 30px;
+	text-align: center;
+	margin: 0% auto;
+	color:#fff;
+	overflow: hidden;*/
+
+}
+.z-d p{
+	float: left;
+}
+.fiexd{
+	/*position: fixed;*/
+	margin-top: 0.2rem;
+	width:100%;
+	z-index: 10000;
+	background: #3a3a3a;
+}
+
+.pagination {
+	margin-top:-0.5rem;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+.pagination span{
+	margin: 0 2px;
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 0.3rem;
+}
+.companyName{
+	/*position: absolute;
+	bottom: 0.1rem;
+	width:100%;
+	color:#FFF;
+	font-size:0.7rem;*/
+	text-align:center;
+	font-size: 0.24rem;
+}
+/*新增样式*/
+.downlond-bt{
+	width:40%;
+	margin:0 auto;
+	padding: 0.10rem 0;
+}
+.el-an{
+	display:block;
+	width:100%;
+	margin-top: 0.20rem;
+}
